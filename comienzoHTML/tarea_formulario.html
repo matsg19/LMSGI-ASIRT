@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Compra</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <script src="https://kit.fontawesome.com/db7d235ee4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Formulario Tarea</h1>
+    <form action="." oninput="range_control_value.value = range_control.valueAsNumber">
+        <ol>
+            <li>
+                <label for="Nombre">Name</label>
+                <input type="text" name="nombre" id="nombre">
+            </li>
+            <li>
+                <label for="Edad">Age</label>
+                <input type="number" name="edad" id="edad">
+            </li>
+            <li>
+                <label for="url">url</label>
+                <input type="url" name="url" id="url" placeholder="http://example.com">
+            </li>
+            <li>
+                <label for="Email">Email</label>
+                <input type="email" name="email" id="email" placeholder="example@dimain.com">
+            </li>
+            <li>
+                <label for="Telefono">Phone</label>
+                <input type="number" name="numero" id="numero" placeholder="Eg. +447500000000">
+            </li>
+            <li>
+                <label for="">Address</label>
+                <textarea name="address" id="address" cols="20" rows="5"></textarea>
+            </li>
+            <li>
+                <label for="">Post Code</label>
+                <input type="number" name="postcode" id="postcode">
+            </li>
+            <li>
+                <label for="Country">Country</label>
+                <input type="text" name="country" id="country" required>
+            </li>
+            <li>
+                <label for="gender">Gender</label><br>
+                <input name="Male" id="male" type="radio">
+                <label for="Male">Male</label>  
+                <input name="Male" id="male" type="radio">
+                <label for="famale">Famale</label>
+            </li>
+        </ol>
+        <button name="enviar">Submit</button>
+</body>
+</html>

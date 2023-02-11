@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>acceso a audios</h2>
+    <audio controls> se puede poner que se cargue automaticamente
+        <source src="/LMSGI-ASIRT/comienzoHTML/media/Bruno Mars   When I Was Your Man Lyrics.mp3" type="audio/mp3">
+        <source src="" type="">
+    </audio>
+    <audio controls>
+        <source src="/LMSGI-ASIRT/comienzoHTML/media/Calvin Harris - This Is What You Came For (Official Video) ft. Rihanna.mp3" type="audio/mp3">
+    </audio> <br>
+    <h2>imagenes de canvas y svg</h2>
+    <canvas id="lienzo1" width="600" height="400">
+        
+        <script type="text/javascript">
+        var canvas=document.getElementById("lienzo1");
+        var contexto=canvas.getContext("2d");
+        contexto.lineWidth=2;
+        for(i=0;i<=600;i+=20){
+        contexto.moveTo(0,0);
+       contexto.lineTo(i,400)
+       contexto.stroke();
+        }
+        </script>
+    </canvas>
+       <svg xmlns="http://www.w3c.org/2000/svg" height="400">
+        <rect id="rec1" x="50" y="50" width="300"
+        height="100" fill="red" />
+        <ellipse id="elips1" cx="200" cy="100" rx="50"
+        ry="75" fill="blue" />
+       </svg>
+    <div id="insertar codigo">
+        <h2>enlazar un video de youtube</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/W3FGsiOrc3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div>
+        <h2>incrustar una pagina web dentro de otro</h2>
+        <iframe src="https://iescuravalera.es" width="90%" height="500px" frameborder="0"></iframe>
+    </div>
+    <div>
+        <h2>incluir un documento pdf</h2>
+        <embed src="./pdf/Aula A11 Canaleta PVC.pdf" type="pdf" width="60%" height="400px">
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamiento de imágenes</title>
+    <!-- Incluir para colocar iconos externos -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <script src="https://kit.fontawesome.com/db7d235ee4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Composición de imágenes</h1>
+    <figure style="float:left;">
+        <img src="./imagenes/ipod.jpg" height="200px" width="100px" alt="Imagen de un IPOD">
+        <img src="./imagenes/img_orange_flowers.jpg" height="200px" width="100px" alt="Imagen de flores naranjas">
+        <figcaption>
+        Fig.1: Imagen de un IPOD y unas flores
+       </figcaption>
+    </figure>
+    <figure style="float:left;">
+        <img src="./imagenes/img_orange_flowers.jpg" height="200px" width="100px" alt="Imagen de flores naranjas">
+       <figcaption>
+        Fig.1: Imagen de unas flores
+       </figcaption>
+    </figure>
+    <figure style="float:left;">
+        <img src="./imagenes/vengadores.jpg" heigh="300px" width="400px" alt="Foto de los vengadores">
+       <figcaption>
+        Fig.3: Foto de los vengadores
+       </figcaption>
+    </figure>
+    <h2> FOTOS QUE CAMBIAN CON EL TAMAÑO DE LA PANTALLA</h2>
+    <figure>
+        <picture>
+            <source media="(min-width:650px)" srcset="./imagenes/ipod.jpg">
+            <source media="(min-width:465px)" srcset="./imagenes/ipod1.jpg">
+            <img src="./imagenes/planetas.jpg" alt="Flowers" style="width:auto;">
+        </picture>
+    </figure>
+
+    <h2>Imagen con MAPA</h2>
+    <p>Pincha en cada planeta para ver más detalle sobre él:</p>
+
+<img src="https://concepto.de/wp-content/uploads/2018/02/Sistema-solar-e1518703607625.jpg" alt="Planetas del sistema solar" usemap="#planetmap">
+
+<map name="planetmap">
+  <area shape="rect" coords="0,160,90,275" alt="Sol" href="https://es.wikipedia.org/wiki/Sol">
+  <area shape="circle" coords="120,220,5" alt="Mercurio" href="https://es.wikipedia.org/wiki/Mercurio_(planeta)">
+  <area shape="circle" coords="170,220,20" alt="Venus" href="https://es.wikipedia.org/wiki/Venus_(planeta)">
+  <area shape="circle" coords="245,220,20" alt="Tierra" href="https://es.wikipedia.org/wiki/Tierra">
+  <area shape="circle" coords="528,220,40" alt="Saturno" href="https://es.wikipedia.org/wiki/Saturno_(planeta)" target="_blank">
+  <area shape="rect" coords="686,192,738,249" alt="Neptuno" href="https://es.wikipedia.org/wiki/Neptuno_(planeta)   " target="_blank">
+</map>
+    <footer>
+        <h3>Acceso a mis redes sociales</h3>
+        <figure style="float:left;">
+            <a href="https://www.instagram.com/"><img src="./imagenes/instagram.png" height="50px" width="50px" alt="Logo de Instaram"></a>
+        </figure>
+        <figure>
+            <a href="https://es-es.facebook.com/"><img src="./imagenes/Logo_de_Facebook.png" height="50px" width="50px" alt="Logo de Facebook"></a>
+        </figure>
+
+
+
+        <br/>
+        <hr/>
+        <h1>Síguenos en FONTAWESOME: 
+        <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></a></i> <i class="fas fa-church" style="color:green"></i> <i class="fa-brands fa-instagram"></i>
+        </h1>
+        <h2>Iconos de Google</h2>
+        <i class="material-icons" style="color:orange">home</i> <i class="material-icons">devices</i> <i class="material-icons">computer</i>
+    </footer>
+</body>
+</html>

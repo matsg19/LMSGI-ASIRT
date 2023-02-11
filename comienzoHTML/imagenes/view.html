@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+
+    <html  dir="ltr" lang="es" xml:lang="es">
+    <head>
+        <title>3267: Ejemplo práctico de formulario y para dar formato</title>
+        <link rel="shortcut icon" href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/pluginfile.php/1/theme_moove/favicon/1675683669/favicon%20%283%29.ico" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, 3267: Ejemplo práctico de formulario y para dar formato" />
+<link rel="stylesheet" type="text/css" href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/theme/styles.php/moove/1675683669_1/all" />
+<link rel="stylesheet" type="text/css" href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/filter/syntaxhighlighter/styles/atom-one-light.min.css" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria","sesskey":"FR4qCK1XuD","sessiontimeout":"18000","sessiontimeoutwarning":"1200","themerev":"1675683669","slasharguments":1,"theme":"moove","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1674739846","admin":"admin","svgicons":true,"usertimezone":"Europa\/Madrid","contextid":735353,"langrev":1675655409,"templaterev":"1674739846"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/theme\/yui_combo.php?m\/1674739846\/","combine":true,"comboBase":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/theme\/yui_combo.php?","ext":false,"root":"m\/1674739846\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_stash-form":{"requires":["base","node","event","handlebars","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_checklist-linkselect":{"requires":["node","event-valuechange"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_scheduler-delselected":{"requires":["base","node","event"]},"moodle-mod_scheduler-saveseen":{"requires":["base","node","event"]},"moodle-mod_scheduler-studentlist":{"requires":["base","node","event","io"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_ousupsub-editor":{"requires":["base","node","event","event-custom","moodle-editor_ousupsub-rangy"]},"moodle-editor_ousupsub-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_fullscreen-button":{"requires":["event-resize","moodle-editor_atto-plugin"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_wiris-button":{"requires":["moodle-editor_atto-plugin","get"]}}},"gallery":{"name":"gallery","base":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1674739846\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/lib\/javascript.php\/1674739846\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/educacionadistancia.juntadeandalucia.es\/centros\/almeria\/lib\/javascript.php\/1674739846\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<script
+                                    async
+                                    src='https://www.googletagmanager.com/gtag/js?id=UA-160775009-1'>
+                                </script>
+                                <script>
+                                    if(localStorage.getItem("cookiesConsent") == 'ALL'){
+                                        window.dataLayer = window.dataLayer || [];
+                                        function gtag() {
+                                            dataLayer.push(arguments);
+                                        }
+                                        gtag('js', new Date());
+                                        gtag('config', 'UA-160775009-1');
+                                    }
+                                </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    </head>
+    
+    <body  id="page-mod-resource-view" class="format-onetopic  path-mod path-mod-resource chrome dir-ltr lang-es yui-skin-sam yui3-skin-sam educacionadistancia-juntadeandalucia-es--centros-almeria pagelayout-incourse course-3267 context-735353 cmid-430939 category-900 d-flex flex-column h-100 drawer-open-left">
+    
+
+<div class="header-ayesa moodle-has-zindex" >
+<!--logo-->
+    <div class="d-flex">
+        <div class="col-logo">
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria" class="navbar-brand nomargin has-logo">
+                    <span class="logo d-none d-md-inline">
+                        <img src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/pluginfile.php/1/theme_moove/logo/1675683669/logo_princiapl.svg" alt="Almería" class="logoplataforma ">
+                    </span>
+                    <span class="logo d-inline d-sm-inline d-md-none">
+                        <img style="width:110px !important" src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/pluginfile.php/1/theme_moove/logo/1675683669/logo_princiapl.svg" alt="Almería" >
+                    </span>
+            </a>
+        </div>
+<!--fin logo-->
+<!--titulos del header-->
+        
+        
+                <div class="flex-grow-1 info-centro">
+                            <div>
+                                <span class="topCentro">Centros:</span><br>
+                                <span class="d-inline several-centros">
+                                    I.E.S. Cura Valera
+                                    <br>
+                                </span>
+
+       
+                               
+                            </div>
+                </div>
+            <!--logo derecho centros-->
+                <div class="ml-auto d-none d-sm-inline col-andalucia">
+                        <span class="logo d-none d-sm-inline">
+                            <img src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/pluginfile.php/1/theme_moove/logo_right/1675683669/logo_junta.svg" alt="Almería" class="logoandalucia logocentros">
+                        </span>
+                </div>    
+            <!--fin logo derecho centros-->
+            </div>
+<!--fin titulo del header-->
+
+<!--logo derecho fedan y avep-->
+<!--fin logo derecho fedan y avep-->
+
+</div>
+
+<nav   class="navHeader fixed-top navbar navbar-light navbar-expand moodle-has-zindex ">
+<!--navegador header izquierdo-->
+            <div data-region="drawer-toggle" class="d-inline-block mr-3 drawer-toggle">
+                <button id="btn-left" aria-expanded="true" aria-controls="nav-drawer" type="button" class="btn nav-link float-sm-left mr-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">
+                    <i class="menu-left"></i>
+                    <span class="sr-only">Panel lateral</span>
+                </button>
+            </div>
+        <ul class="navbar-nav d-none d-md-flex custom-menus">
+            <!-- custom_menu -->
+            
+            <!-- page_heading_menu -->
+            
+
+                <strong class="course-name">Lenguajes de marcas y sistemas de gestión de información</strong>
+        </ul>
+<!--fin navegador header izquierdo-->
+<!--navegador header derecho-->
+    <ul class="nav navbar-nav ml-auto">
+            <div class="pull-right popover-region collapsed">
+                 <a id="expand-compress-menu" class="nav-link d-inline-block popover-region-toggle position-relative" href="#" role="button" data-expanded="false">
+                    <i class="fa fa-expand" title="Mostrar/ocultar cabecera" aria-label="Mostrar/ocultar cabecera"></i>
+                </a>
+            </div>
+            <div class="d-none d-lg-block">
+                
+            </div>
+
+            <li class="nav-item lang-menu">
+                
+            </li>
+
+            <li class="nav-item nav-help pl-2 pr-2">
+                    <a id="help" href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/login/forgot_password.php?token=1"><i class="fa fa-question-circle"></i></a>
+            </li>
+
+            <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="2383"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin"
+        data-region="popover-region-toggle"
+        role="button"
+        aria-controls="popover-region-container-63e151c3e781a63e151c31650112"
+        aria-haspopup="true"
+        aria-label="Mostrar la ventana de notificaciones cuando no hay ninguna"
+        tabindex="0">
+                <i class="slicon-bell" title="Mostrar/ocultar menú de notificaciones"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div 
+        id="popover-region-container-63e151c3e781a63e151c31650112"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Ventana de notificación"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notificaciones</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="hover-tooltip-container">
+                    <a class="mark-all-read-button"
+                    href="#"
+                    title="Marcar como leído"
+                    data-action="mark-all-read"
+                    role="button">
+                    <span class="normal-icon"><i class="slicon-check" alt="Marcar como leído"></i></span>
+                    <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Cargando" role="img" aria-label="Cargando"></i></span>
+                </a>
+
+    <div class="hover-tooltip">
+        Marcar como leído
+    </div>
+</div>
+        <div class="hover-tooltip-container">
+                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/message/notificationpreferences.php"
+                    title="Preferencias de notificación">
+                    <i class="slicon-settings" alt="Preferencias de notificación"></i>
+                </a>
+
+    <div class="hover-tooltip">
+        Preferencias de notificación
+    </div>
+</div>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">No tienes notificaciones</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Cargando" role="img" aria-label="Cargando"></i></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Ver todo</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-mail "
+            id="nav-mail-popover-container"
+
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin"
+        data-region="popover-region-toggle"
+        role="button"
+        aria-controls="popover-region-container-63e151c3e990c63e151c31650113"
+        aria-haspopup="true"
+        aria-label="Muestra/oculta el menú del correo"
+        tabindex="0">
+                <!--<i class="icon fa fa-envelope fa-fw "  title="Muestra/oculta el menú del correo" role="img" aria-label="Muestra/oculta el menú del correo"></i>-->
+        <i class="fa fa-envelope" title="Muestra/oculta el menú del correo" aria-label="Muestra/oculta el menú del correo"></i>
+
+    </div>
+    <div 
+        id="popover-region-container-63e151c3e990c63e151c31650113"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Menú del correo"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Correo</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/create.php?c=3267&amp;sesskey=FR4qCK1XuD" class="mail-navbar-menu-compose-link">
+            Redactar
+        </a>
+        <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/preferences.php" title="Preferencias">
+        <!--Modificacion Javi:   Icono de las preferencias-->
+            <!--<i class="icon fa slicon-settings fa-fw "  title="Preferencias" role="img" aria-label="Preferencias"></i>-->
+            <i class="icon fa color-primary fa-cog fa-fw" title = 'Preferencias' aria-label="Preferencias"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="mail-navbar-menu">
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=inbox" 
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-inbox fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-inbox fa-fw"></i>
+                Bandeja de entrada
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=starred" 
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-star fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-star fa-fw"></i>
+                Destacado
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=drafts" 
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-file fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-file fa-fw"></i>
+                Borradores
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=sent" 
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-paper-plane fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-paper-plane fa-fw"></i>
+                Enviado
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=trash" 
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-trash fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-trash fa-fw"></i>
+                Basura
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=course&amp;c=775" title="Formación del I.E.S. Cura Valera"
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-university fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-university fa-fw"></i>
+                4002714_formacion_cep
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=course&amp;c=238" title="Punto de encuentro del I.E.S. Cura Valera"
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-university fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-university fa-fw"></i>
+                4002714_punto_encuentro
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=course&amp;c=237" title="Sala del profesorado del I.E.S. Cura Valera"
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-university fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-university fa-fw"></i>
+                4002714_sala_profesorado
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=course&amp;c=5670" title="FH - 1º ASIR"
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-university fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-university fa-fw"></i>
+                FH - 1º ASIR
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=course&amp;c=3267" title="Lenguajes de marcas y sistemas de gestión de información"
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-university fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-university fa-fw"></i>
+                3267
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=course&amp;c=3266" title="Gestión de bases de datos"
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-university fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-university fa-fw"></i>
+                3266
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=course&amp;c=3265" title="Fundamentos de hardware"
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-university fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-university fa-fw"></i>
+                3265
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=course&amp;c=3264" title="Planificación y administración de redes"
+                class="mail-navbar-menu-item
+                    
+                    ">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-university fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-university fa-fw"></i>
+                3264
+            </a>
+            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/mail/view.php?t=course&amp;c=3240" title="Curso de Domingo, López"
+                class="mail-navbar-menu-item
+                    
+                    dimmed_text">
+                
+                
+                <!--Modificacion JAVI: Iconos de los elementos del corre0. Lo pongo con el color primary del tema-->
+                <!--<i class="icon fa fa-university fa-fw "   ></i>-->
+                <i class="icon fa color-primary  fa-university fa-fw"></i>
+                3240
+            </a>
+        </div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Cargando" role="img" aria-label="Cargando"></i></span>
+        </div>
+    </div>
+</div>
+            
+
+        <li class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items d-inline" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-1-menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" tabindex="0" class="d-inline-block  dropdown-toggle icon-no-margin" id="action-menu-toggle-1" aria-label="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-1-menu">
+                            
+                            <span class="userbutton"><span class="usertext"></span><span class="avatars"><span class="avatar current"><img src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/pluginfile.php/3772/user/icon/moove/f2?rev=421318" class="userpicture" width="35" height="35" alt="" /></span></span></span>
+                                
+                            <b class="caret"></b>
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+                                                                <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/user/profile.php?id=2383" class="dropdown-item text-username menu-action" role="menuitem" tabindex="-1" aria-labelledby="actionmenuaction-1">
+                                <i class="icon fa slicon-user fa-fw "  title="López Oller, Domingo" role="img" aria-label="López Oller, Domingo"></i>
+                                <span class="menu-action-text" id="actionmenuaction-1">López Oller, Domingo</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" tabindex="-1" aria-labelledby="actionmenuaction-2">
+                                <i class="icon fa slicon-speedometer fa-fw "  title="Área personal" role="img" aria-label="Área personal"></i>
+                                <span class="menu-action-text" id="actionmenuaction-2">Área personal</span>
+                        </a>
+                                                                <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/user/profile.php?id=2383" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" tabindex="-1" aria-labelledby="actionmenuaction-3">
+                                <i class="icon fa slicon-user fa-fw "  title="Perfil" role="img" aria-label="Perfil"></i>
+                                <span class="menu-action-text" id="actionmenuaction-3">Perfil</span>
+                        </a>
+                                                                <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" tabindex="-1" aria-labelledby="actionmenuaction-4">
+                                <i class="icon fa slicon-book-open fa-fw "  title="Calificaciones" role="img" aria-label="Calificaciones"></i>
+                                <span class="menu-action-text" id="actionmenuaction-4">Calificaciones</span>
+                        </a>
+                                                                <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" tabindex="-1" aria-labelledby="actionmenuaction-5">
+                                <i class="icon fa fa-comment fa-fw "  title="Mensajes" role="img" aria-label="Mensajes"></i>
+                                <span class="menu-action-text" id="actionmenuaction-5">Mensajes</span>
+                        </a>
+                                                                <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" tabindex="-1" aria-labelledby="actionmenuaction-6">
+                                <i class="icon fa slicon-wrench fa-fw "  title="Preferencias" role="img" aria-label="Preferencias"></i>
+                                <span class="menu-action-text" id="actionmenuaction-6">Preferencias</span>
+                        </a>
+                                                                <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/login/logout.php?sesskey=FR4qCK1XuD" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" tabindex="-1" aria-labelledby="actionmenuaction-7">
+                                <i class="icon fa slicon-logout fa-fw "  title="Cerrar sesión" role="img" aria-label="Cerrar sesión"></i>
+                                <span class="menu-action-text" id="actionmenuaction-7">Cerrar sesión</span>
+                        </a>
+                    <div class="dropdown-divider" role="presentation"><span class="filler">&nbsp;</span></div>
+                                                                <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/switchrole.php?id=3267&amp;switchrole=-1&amp;returnurl=%2Fmod%2Fresource%2Fview.php%3Fid%3D430939" class="dropdown-item menu-action" role="menuitem" data-title="switchroleto,moodle" tabindex="-1" aria-labelledby="actionmenuaction-8">
+                                <i class="icon fa fa-user-secret fa-fw "  title="Cambiar rol a..." role="img" aria-label="Cambiar rol a..."></i>
+                                <span class="menu-action-text" id="actionmenuaction-8">Cambiar rol a...</span>
+                        </a>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div></li>
+    </ul>
+<!--fin header navegador derecho-->
+</nav>
+
+<!--botones de bajar y subir-->
+<button id="btn-scroll-up" type="button" class="btn btn-secondary">
+    <i class="fa fa-arrow-circle-up fa-3x"></i>
+</button>
+<button id="btn-scroll-down" type="button" class="btn btn-secondary">
+    <i class="fa fa-arrow-circle-down fa-3x"></i>
+</button>
+<!--fin de botones bajar y subir-->
+
+    
+    <div id="page-wrapper">
+    
+        <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Salta al contenido principal</a>
+</div><script src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/javascript.php/1674739846/lib/babel-polyfill/polyfill.min.js"></script>
+<script src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/javascript.php/1674739846/lib/polyfills/polyfill.js"></script>
+<script src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/javascript.php/1674739846/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+    <div id="page" class="container-fluid d-print-block">
+        <header id="page-header" class="row">
+    <div class="col-12 pt-3 pb-3">
+        <div class="card ">
+            <div class="card-body ">
+                <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                        <div class="page-context-header"><div class="page-header-headings"><h1>Lenguajes de marcas y sistemas de gestión de información</h1></div></div>
+                    </div>
+
+                    <div class="header-actions-container flex-shrink-0" data-region="header-actions-container">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap">
+                    <div id="page-navbar">
+                        <nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/my/" >Área personal</a></li>
+                <li class="breadcrumb-item"><span class="no-link">Mis cursos</span></li>
+                <li class="breadcrumb-item"><a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3267&amp;section=0" title="Lenguajes de marcas y sistemas de gestión de información">Lenguajes de marcas y sistemas de gestión de información</a></li>
+                <li class="breadcrumb-item"><a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3267&amp;section=2" >Segundo Trimestre</a></li>
+                <li class="breadcrumb-item"><a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/mod/resource/view.php?id=430939" title="Archivo">Ejemplo práctico de formulario y para dar formato</a></li>
+    </ol>
+</nav>
+                    </div>
+                    <div class="ml-auto d-flex">
+                        
+                    </div>
+                    <div id="course-header">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div id="page-content" class="row pb-3 d-print-block">
+            <div id="region-main-box" class="col-12">
+                    <div id="region-main-settings-menu" class="d-print-none">
+                        <div> <div class="action-menu moodle-actionmenu d-inline" id="action-menu-3" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar d-flex " id="action-menu-3-menubar">
+
+            
+
+
+                <div class="action-menu-trigger">
+                    <div class="dropdown">
+                        <a href="#" tabindex="0" class="d-inline-block  dropdown-toggle icon-no-margin" id="action-menu-toggle-3" aria-label="Menú de acciones" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="action-menu-3-menu">
+                            
+                            
+<i class="icon fa slicon-settings fa-fw "  title="Menú de acciones" role="img" aria-label="Menú de acciones"></i>                                
+                        </a>
+                            <div class="dropdown-menu dropdown-menu-right menu align-tr-br" id="action-menu-3-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-3" role="menu" data-align="tr-br">
+                                            <div class="dropdown-item">
+
+    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/modedit.php?update=430939&return=1" id="action_link63e151c31650124" class=""  role="menuitem"  tabindex="-1" ><i class="icon fa slicon-settings fa-fw "   ></i>Editar ajustes</a>
+
+
+
+</div>
+                                            <div class="dropdown-item">
+
+    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/admin/roles/assign.php?contextid=735353" id="action_link63e151c31650125" class=""  role="menuitem"  tabindex="-1" ><i class="icon fa fa-user-md fa-fw "   ></i>Roles asignados localmente</a>
+
+
+
+</div>
+                                            <div class="dropdown-item">
+
+    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/admin/roles/permissions.php?contextid=735353" id="action_link63e151c31650126" class=""  role="menuitem"  tabindex="-1" ><i class="icon fa fa-pencil-square-o fa-fw "   ></i>Permisos</a>
+
+
+
+</div>
+                                            <div class="dropdown-item">
+
+    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/admin/roles/check.php?contextid=735353" id="action_link63e151c31650127" class=""  role="menuitem"  tabindex="-1" ><i class="icon fa slicon-lock-open fa-fw "   ></i>Comprobar los permisos</a>
+
+
+
+</div>
+                                            <div class="dropdown-item">
+
+    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/filter/manage.php?contextid=735353" id="action_link63e151c31650128" class=""  role="menuitem"  tabindex="-1" ><i class="icon fa fa-filter fa-fw "   ></i>Filtros</a>
+
+
+
+</div>
+                                            <div class="dropdown-item">
+
+    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/report/competency/index.php?id=3267&mod=430939" id="action_link63e151c31650129" class=""  role="menuitem"  tabindex="-1" ><i class="icon fa slicon-check fa-fw "   ></i>Desglose de Competencias</a>
+
+
+
+</div>
+                                            <div class="dropdown-item">
+
+    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/report/log/index.php?chooselog=1&id=3267&modid=430939" id="action_link63e151c31650130" class=""  role="menuitem"  tabindex="-1" ><i class="icon fa fa-area-chart fa-fw "   ></i>Registros</a>
+
+
+
+</div>
+                                            <div class="dropdown-item">
+
+    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/backup/backup.php?id=3267&cm=430939" id="action_link63e151c31650131" class=""  role="menuitem"  tabindex="-1" ><i class="icon fa fa-file-zip-o fa-fw "   ></i>Copia de seguridad</a>
+
+
+
+</div>
+                                            <div class="dropdown-item">
+
+    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/backup/restorefile.php?contextid=735353" id="action_link63e151c31650132" class=""  role="menuitem"  tabindex="-1" ><i class="icon fa slicon-arrow-up-circle fa-fw "   ></i>Restaurar</a>
+
+
+
+</div>
+                            </div>
+                    </div>
+                </div>
+
+        </div>
+
+</div> </div>
+                    </div>
+
+                <section id="region-main">
+                    <div class="card">
+                        <div class="card-body">
+                                <div class="region_main_settings_menu_proxy"></div>
+                            <span class="notifications" id="user-notifications"></span>
+                            <div role="main"><span id="maincontent"></span><h2>Ejemplo práctico de formulario y para dar formato</h2><div class="resourcecontent resourcegeneral">
+  <iframe id="resourceobject" src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/pluginfile.php/735353/mod_resource/content/30/formulario%20pr%C3%A1ctica.html?embed=1">
+    Haga clic en <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/pluginfile.php/735353/mod_resource/content/30/formulario%20pr%C3%A1ctica.html" >formulario práctica.html</a> para ver el archivo.
+  </iframe>
+</div></div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="card activity-navigation">
+    <div class="card-body">
+        <div class="row">
+    <div class="col-md-4">                <div id="prev-activity" class="float-left">
+                        <span class="nav-guide">
+                            Actividad previa
+                        </span>
+                            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/mod/assign/view.php?id=427346&forceview=1" id="prev-activity-link" class="btn btn-link" >&#x25C4; Primer diseño web componentes Hardware y tabla</a>
+                </div>
+</div>
+    <div class="col-md-4">                <div class="mdl-align">
+                    <div class="urlselect">
+    <form method="post" action="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/jumpto.php" class="form-inline" id="url_select_f63e151c31650133">
+        <input type="hidden" name="sesskey" value="FR4qCK1XuD">
+            <label for="jump-to-activity" class="sr-only">
+                Ir a...
+            </label>
+        <select  id="jump-to-activity" class="custom-select urlselect" name="jump"
+                 >
+                    <option value="" selected>Ir a...</option>
+                    <option value="/mod/forum/view.php?id=87062&amp;forceview=1" >Avisos</option>
+                    <option value="/mod/resource/view.php?id=135521&amp;forceview=1" >Programación didáctica de la materia</option>
+                    <option value="/mod/resource/view.php?id=135520&amp;forceview=1" >Libro de la materia LMSGI</option>
+                    <option value="/mod/resource/view.php?id=137783&amp;forceview=1" >Libro de HTML5, CSS3 y JavaScript</option>
+                    <option value="/mod/resource/view.php?id=135519&amp;forceview=1" >Presentación de inicio del módulo LMSGI</option>
+                    <option value="/mod/url/view.php?id=135523&amp;forceview=1" >Acceso a beca OpenWebinars</option>
+                    <option value="/mod/assign/view.php?id=228778&amp;forceview=1" >Evaluación inicial</option>
+                    <option value="/mod/resource/view.php?id=135184&amp;forceview=1" >Diapositivas de la unidad 1</option>
+                    <option value="/mod/page/view.php?id=135516&amp;forceview=1" >Enlaces a contenidos de la unidad 1</option>
+                    <option value="/mod/resource/view.php?id=137459&amp;forceview=1" >Manual LaTex</option>
+                    <option value="/mod/resource/view.php?id=137458&amp;forceview=1" >EjemploLatex</option>
+                    <option value="/mod/assign/view.php?id=155337&amp;forceview=1" >Manejo básico de LaTex</option>
+                    <option value="/mod/assign/view.php?id=233825&amp;forceview=1" >Actividades de las diapositivas de la unidad 1 LMSGI</option>
+                    <option value="/mod/assign/view.php?id=263017&amp;forceview=1" >Relación de ejercicios de la unidad 1 LMSGI</option>
+                    <option value="/mod/assign/view.php?id=276014&amp;forceview=1" >Examen del tema 1 LMSGI</option>
+                    <option value="/mod/resource/view.php?id=278143&amp;forceview=1" >Diapositivas de la unidad 2</option>
+                    <option value="/mod/resource/view.php?id=355902&amp;forceview=1" >XPATH a través de ejemplos</option>
+                    <option value="/mod/page/view.php?id=278139&amp;forceview=1" >Enlaces a contenidos de la unidad 2</option>
+                    <option value="/mod/assign/view.php?id=292496&amp;forceview=1" >Ejercicios de XML</option>
+                    <option value="/mod/assign/view.php?id=322684&amp;forceview=1" >Ejercicios de validación DTD</option>
+                    <option value="/mod/assign/view.php?id=335824&amp;forceview=1" >Ejercicios de validación XSD</option>
+                    <option value="/mod/assign/view.php?id=330868&amp;forceview=1" >Examen de XML y DTD</option>
+                    <option value="/mod/folder/view.php?id=356521&amp;forceview=1" >Ficheros XML para probar XPath y XQuery</option>
+                    <option value="/mod/assign/view.php?id=356594&amp;forceview=1" >Ejercicios de consultas XQuery</option>
+                    <option value="/mod/assign/view.php?id=370449&amp;forceview=1" >Ejercicios de transformación XSLT</option>
+                    <option value="/mod/assign/view.php?id=355942&amp;forceview=1" >Examen de XQuery y XSLT</option>
+                    <option value="/mod/assign/view.php?id=285562&amp;forceview=1" >Actividades de las diapositivas de la unidad 2 LMSGI</option>
+                    <option value="/mod/assign/view.php?id=355946&amp;forceview=1" >Examen final de trimestre LMSGI</option>
+                    <option value="/mod/resource/view.php?id=359754&amp;forceview=1" >Diapositivas de la unidad 3 (Continuará)</option>
+                    <option value="/mod/folder/view.php?id=405588&amp;forceview=1" >Contenido sobre GIT</option>
+                    <option value="/mod/resource/view.php?id=412950&amp;forceview=1" >Chuleta de HTML5</option>
+                    <option value="/mod/resource/view.php?id=412952&amp;forceview=1" >Chuleta de Emmet para desarrollo HTML en VSCode</option>
+                    <option value="/mod/folder/view.php?id=427258&amp;forceview=1" >Imágenes para tareas</option>
+                    <option value="/mod/page/view.php?id=359757&amp;forceview=1" >Enlaces a contenidos de la unidad 3</option>
+                    <option value="/mod/assign/view.php?id=388844&amp;forceview=1" >Introducción a Figma en OpenWebinars</option>
+                    <option value="/mod/assign/view.php?id=408142&amp;forceview=1" >Curso de GIT en OpenWebinars</option>
+                    <option value="/mod/assign/view.php?id=427346&amp;forceview=1" >Primer diseño web componentes Hardware y tabla</option>
+                    <option value="/mod/assign/view.php?id=431037&amp;forceview=1" >Diseño de formularios</option>
+                    <option value="/mod/assign/view.php?id=397604&amp;forceview=1" >Actividades de las diapositivas unidad 3 HTML</option>
+                    <option value="/mod/resource/view.php?id=429655&amp;forceview=1" >Chuleta de CSS3</option>
+                    <option value="/mod/page/view.php?id=429628&amp;forceview=1" >Enlaces a contenidos de la unidad 4 (Continuará)</option>
+                    <option value="/mod/assign/view.php?id=429657&amp;forceview=1" >Actividades de las diapositivas unidad 4 CSS</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary ml-1" value="Ir">
+            </noscript>
+    </form>
+</div>
+
+                </div>
+</div>
+    <div class="col-md-4">                <div id="next-activity" class="float-right">
+                        <span class="nav-guide">
+                            Siguiente actividad
+                        </span>
+                            <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/mod/assign/view.php?id=431037&forceview=1" id="next-activity-link" class="btn btn-link" >Diseño de formularios &#x25BA;</a>
+                </div>
+</div>
+</div>
+    </div>
+</div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+        
+    
+            
+            <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex " tabindex="-1">
+                <ul class="list-group metismenu">
+                            <li class="list-group-item" data-key="courseadmin">
+                                <a class="m-l-0 has-arrow" href="javascript:void(0);">
+                                    <span class="text">Administración del curso</span>
+                                </a>
+                                <ul>
+                                            <li class="list-group-item list-group-item-action " data-key="editsettings">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/edit.php?id=3267">
+                                                    <span class="text">Editar ajustes</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="users">
+                                                <a class="list-group-item list-group-item-action has-arrow"
+                                                   href="javascript:void(0);">
+                                                    <span class="text">Usuarios</span>
+                                                </a>
+                                                        <ul>
+                                                                <li class="list-group-item list-group-item-action " data-key="review">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/user/index.php?id=3267">
+                                                                        <span class="text">Usuarios matriculados</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="manageinstances">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/enrol/instances.php?id=3267">
+                                                                        <span class="text">Métodos de matriculación</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="groups">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/group/index.php?id=3267">
+                                                                        <span class="text">Grupos</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="override">
+                                                                    <a class="list-group-item list-group-item-action has-arrow"
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/admin/roles/permissions.php?contextid=229884">
+                                                                        <span class="text">Permisos</span>
+                                                                    </a>
+                                                                        <ul>
+                                                                                <li class="list-group-item list-group-item-action " data-key="permissions">
+                                                                                    <a class="list-group-item list-group-item-action " href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/admin/roles/check.php?contextid=229884">
+                                                                                        <span class="text">Comprobar los permisos</span>
+                                                                                    </a>
+                                                                                </li>
+                                                                        </ul>
+                                                                </li>
+                                                        </ul>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="2">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/filter/manage.php?contextid=229884">
+                                                    <span class="text">Filtros</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="coursereports">
+                                                <a class="list-group-item list-group-item-action has-arrow"
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/report/view.php?courseid=3267">
+                                                    <span class="text">Informes</span>
+                                                </a>
+                                                        <ul>
+                                                                <li class="list-group-item list-group-item-action " data-key="0">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/report/competency/index.php?id=3267">
+                                                                        <span class="text">Desglose de Competencias</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="1">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/report/insights/insights.php?contextid=229884">
+                                                                        <span class="text">Intuiciones (predicciones)</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="2">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/report/log/index.php?id=3267">
+                                                                        <span class="text">Registros</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="3">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/report/loglive/index.php?id=3267">
+                                                                        <span class="text">Registros activos</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="4">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/report/outline/index.php?id=3267">
+                                                                        <span class="text">Actividad del curso</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="5">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/report/participation/index.php?id=3267">
+                                                                        <span class="text">Participación en el curso</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="6">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/blocks/analytics_graphs/grades_chart.php?id=3267">
+                                                                        <span class="text">Gráfico de calificaciones</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="7">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/blocks/analytics_graphs/graphresourcestartup.php?id=3267">
+                                                                        <span class="text">Contenido accedido</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="8">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/blocks/analytics_graphs/timeaccesseschart.php?id=3267&amp;days=7">
+                                                                        <span class="text">Número de estudiantes activos</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="9">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/blocks/analytics_graphs/assign.php?id=3267">
+                                                                        <span class="text">Envíos de actividades</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="10">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/blocks/analytics_graphs/hits.php?id=3267">
+                                                                        <span class="text">Distribución de aciertos</span>
+                                                                    </a>
+                                                                </li>
+                                                        </ul>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="gradebooksetup">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/grade/edit/tree/index.php?id=3267">
+                                                    <span class="text">Configuración Calificaciones</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="outcomes">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/grade/edit/outcome/course.php?id=3267">
+                                                    <span class="text">Resultados</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="coursebadges">
+                                                <a class="list-group-item list-group-item-action has-arrow"
+                                                   href="javascript:void(0);">
+                                                    <span class="text">Insignias</span>
+                                                </a>
+                                                        <ul>
+                                                                <li class="list-group-item list-group-item-action " data-key="coursebadges">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/badges/index.php?type=2&amp;id=3267">
+                                                                        <span class="text">Gestionar insignias</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="newbadge">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/badges/newbadge.php?type=2&amp;id=3267">
+                                                                        <span class="text">Añadir una nueva insignia</span>
+                                                                    </a>
+                                                                </li>
+                                                        </ul>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="backup">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/backup/backup.php?id=3267">
+                                                    <span class="text">Copia de seguridad</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="restore">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/backup/restorefile.php?contextid=229884">
+                                                    <span class="text">Restaurar</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="import">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/backup/import.php?id=3267">
+                                                    <span class="text">Importar</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="reset">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/reset.php?id=3267">
+                                                    <span class="text">Reiniciar</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="questionbank">
+                                                <a class="list-group-item list-group-item-action has-arrow"
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/question/edit.php?courseid=3267">
+                                                    <span class="text">Banco de preguntas</span>
+                                                </a>
+                                                        <ul>
+                                                                <li class="list-group-item list-group-item-action " data-key="questions">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/question/edit.php?courseid=3267">
+                                                                        <span class="text">Preguntas</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="categories">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/question/category.php?courseid=3267">
+                                                                        <span class="text">Categorías</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="import">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/question/import.php?courseid=3267">
+                                                                        <span class="text">Importar</span>
+                                                                    </a>
+                                                                </li>
+                                                                <li class="list-group-item list-group-item-action " data-key="export">
+                                                                    <a class="list-group-item list-group-item-action "
+                                                                       href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/question/export.php?courseid=3267">
+                                                                        <span class="text">Exportar</span>
+                                                                    </a>
+                                                                </li>
+                                                        </ul>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="tool_recyclebin">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/admin/tool/recyclebin/index.php?contextid=229884">
+                                                    <span class="text">Papelera de reciclaje</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="13">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/local/listcoursefiles/index.php?courseid=3267">
+                                                    <span class="text">Archivos del curso</span>
+                                                </a>
+                                            </li>
+                                </ul>
+                            </li>
+                                <li class="list-group-item list-group-item-action " data-key="actividad-reciente">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/recent.php?id=3267">
+                                        <span class="text m-l-0">Actividad reciente</span>
+                                    </a>
+                                </li>
+                            <li class="list-group-item" data-key="course-sections">
+                                <a class="m-l-0 has-arrow" href="javascript:void(0);">
+                                    <span class="text">Secciones del curso</span>
+                                </a>
+                                <ul>
+                                            <li class="list-group-item list-group-item-action " data-key="11527">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3267&amp;section=0">
+                                                    <span class="text">General</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="18367">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3267&amp;section=1">
+                                                    <span class="text">Primer Trimestre</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="18540">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3267&amp;section=2">
+                                                    <span class="text">Segundo Trimestre</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="18541">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3267&amp;section=3">
+                                                    <span class="text">Tercer Trimestre</span>
+                                                </a>
+                                            </li>
+                                </ul>
+                            </li>
+                                <li class="list-group-item list-group-item-action " data-key="participants">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/user/index.php?id=3267">
+                                        <span class="text m-l-0">Participantes</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="badgesview">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/badges/view.php?type=2&amp;id=3267">
+                                        <span class="text m-l-0">Insignias</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="competencies">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/admin/tool/lp/coursecompetencies.php?courseid=3267">
+                                        <span class="text m-l-0">Competencias</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="grades">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/grade/report/index.php?id=3267">
+                                        <span class="text m-l-0">Calificaciones</span>
+                                    </a>
+                                </li>
+                        </ul>
+                        <ul class="list-group metismenu">
+                                <li class="list-group-item list-group-item-action " data-key="myhome">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/my/">
+                                        <span class="text m-l-0">Área personal</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="home">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/?redirect=0">
+                                        <span class="text m-l-0">Inicio del sitio</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="calendar">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/calendar/view.php?view=month&amp;course=3267">
+                                        <span class="text m-l-0">Calendario</span>
+                                    </a>
+                                </li>
+                            <li class="list-group-item" data-key="mycourses">
+                                <a class="m-l-0 has-arrow" href="javascript:void(0);">
+                                    <span class="text">Mis cursos</span>
+                                </a>
+                                <ul>
+                                            <li class="list-group-item list-group-item-action " data-key="775">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=775">
+                                                    <span class="text">Formación del I.E.S. Cura Valera</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="238">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=238">
+                                                    <span class="text">Punto de encuentro del I.E.S. Cura Valera</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="237">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=237">
+                                                    <span class="text">Sala del profesorado del I.E.S. Cura Valera</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="5670">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=5670">
+                                                    <span class="text">FH - 1º ASIR</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="3267">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3267&amp;section=0">
+                                                    <span class="text">Lenguajes de marcas y sistemas de gestión de información</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="3266">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3266">
+                                                    <span class="text">Gestión de bases de datos</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="3265">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3265">
+                                                    <span class="text">Fundamentos de hardware</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="3264">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3264">
+                                                    <span class="text">Planificación y administración de redes</span>
+                                                </a>
+                                            </li>
+                                            <li class="list-group-item list-group-item-action " data-key="3240">
+                                                <a class="list-group-item list-group-item-action "
+                                                   href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/course/view.php?id=3240">
+                                                    <span class="text">Curso de Domingo, López</span>
+                                                </a>
+                                            </li>
+                                </ul>
+                            </li>
+                                <li class="list-group-item list-group-item-action " data-key="privatefiles">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/user/files.php">
+                                        <span class="text m-l-0">Archivos privados</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item list-group-item-action " data-key="contentbank">
+                                    <a href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/contentbank/index.php?contextid=229884">
+                                        <span class="text m-l-0">Banco de contenido</span>
+                                    </a>
+                                </li>
+                </ul>            </div>
+            
+        <!-- 
+        <div class="col-auto d-xs-inline d-sm-none logo-login">
+            <span class="logo ">
+                <img src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/theme/image.php/moove/theme/1675683669/logo_right" alt="Almería" style="max-height:90px;" class="logoandalucia pt-2 pb-3">
+            </span>
+        </div>
+         -->
+    
+    </div><!-- Ends .page-wrapper -->
+    
+<div id="top-footer">
+  <div class="container-fluid">
+    <div class="row-centros">
+      <div class="d-none d-sm-inline col-auto img-logo-junta">
+          <!--Imagen footer junta-->
+        <span class="logo d-none d-sm-inline">  
+            <img src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/pluginfile.php/1/theme_moove/logofooter/1675683669/logo-junta.png" alt="logo-junta" title="logo-junta" width="146" height="86">
+        </span>    
+      </div>
+      <div class="d-inline d-sm-none col-auto img-logo-junta">
+          <!--Imagen footer junta versión movil-->
+        <span class="logo d-inline d-sm-none">  
+            <img src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/pluginfile.php/1/theme_moove/logofooter_movil/1675683669/logo_junta%20%281%29.svg" alt="logo-junta" title="logo-junta" width="146" height="86">
+        </span>    
+      </div>
+      <div class="col-auto contact-centros">         
+        <ul>
+<li><a href="https://www.juntadeandalucia.es/educacion/portals/web/ced/accesibilidad" title="Accesibilidad" target="_blank" class="color-primary"><i class="fa fa-universal-access "></i> Accesibilidad</a>
+</li>
+<li>
+<a href="https://seneca.juntadeandalucia.es/seneca/jsp/portal/" title="Séneca" target="_blank" class="color-primary"><i class="fa fa-graduation-cap"></i> Portal Séneca</a>
+</li>
+<li>
+<a href="https://educacionadistancia.juntadeandalucia.es/" title="Plataformas" target="_blank" class="color-primary"><i class="fa fa-book"></i> Plataformas de Aprendizaje</a>
+</li>
+</ul>
+          <ul>
+                </ul>
+            </div>
+            <div class="col-auto ml-auto social">
+                <ul>
+
+
+
+
+
+                </ul>
+            </div>
+             <div class="col-12 col">
+                    <div class="plugins_standard_footer_html"><div class="mobilefooter mb-2"><a class="btn btn-primary" href="https://download.moodle.org/mobile?version=2021051707.03&amp;lang=es&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile"><i class='slicon-screen-smartphone'></i> Descargar la app para dispositivos móviles</a></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/requirejs.php/1674739846/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/javascript.php/1674739846/lib/jquery/jquery-3.5.1.min',
+        jqueryui: 'https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/javascript.php/1674739846/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/javascript.php/1674739846/lib/requirejs/jquery-private',
+        //Modificacion: añade jquerys externos
+        select2: 'https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/javascript.php/1674739846/lib/jquery/select2/select2.min',
+        loading: 'https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/javascript.php/1674739846/lib/jquery/loading/loading',   
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://educacionadistancia.juntadeandalucia.es/centros/almeria/lib/javascript.php/1674739846/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('es');
+});;
+
+
+require(['jquery', 'tool_policy/jquery-eu-cookie-law-popup', 'tool_policy/policyactions'], function($, Popup, ActionsMod) {
+        // Initialise the guest popup.
+        $(document).ready(function() {
+            // Only show message if there is some policy related to guests.
+
+            // Initialise the JS for the modal window which displays the policy versions.
+            ActionsMod.init('[data-action="view-guest"]');
+        });
+});
+
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'core/popover_region_controller'], function($, controller) {
+    var container = $('#nav-mail-popover-container');
+    var controller = new controller(container);
+    controller.registerListNavigationEventListeners();
+});
+;
+
+	require(['jquery', 'core/event'], function($) {
+
+		$ (document).ready (function () {
+            function expandCompress(el,animate){
+                var $this = el;
+				var $icon = $this.find ('i');
+                var $total = parseInt($navbar_height) + parseInt($header_height);
+                var $page = $('#page');
+                var $pageheader = $('#page-header');
+                var $app = $('.drawer');
+
+                if ($this.data ('expanded')) {
+                    $this.data('expanded', false);
+                    M.util.set_user_preference("expandedNavigation", 1);
+                    sessionStorage.setItem('expand', 0);
+
+                    var $top = parseInt($navbar_height +18);
+                    var $height = parseInt($navbar_height + 40);
+
+                    if(animate){
+                        $('.message-drawer').animate({top: $navbar_height,});
+                    }else{
+                        $('.message-drawer').css({top: $navbar_height,});
+                    }
+                    $('.message-drawer').css({'height': 'calc(100% - ' + $navbar_height + 'px)'});
+
+					$icon.removeClass ('fa-expand').addClass ('fa-compress');
+                    if(animate){
+                        $navbar.animate ({'top': '0px'});
+                        $page.animate({'margin-top':'0px'});
+                        $app.animate({top: '50px'});
+                        $pagelogin.animate ({'margin-top': '0px'});
+                        $navdrawer.animate ({'margin-top': $navbar_height + 'px'});
+                        $sidepre.animate({'top': $top + 'px'});
+                    }else{
+                        $navbar.css ({'top': '0px'});
+                        $page.css({'margin-top':'0px'});
+                        $app.css({top: '50px'});
+                        $pageheader.css ({'margin-top': '20px'});
+                        $pagelogin.css ({'margin-top': '0px'});
+                        $navdrawer.css ({'margin-top': $navbar_height + 'px'});
+                        $sidepre.css({'top': $top + 'px'});
+                    }
+					
+                    $sidepre.css('height', 'calc(102% - '+ $height + 'px)');
+					$navdrawer.css ({'height': 'calc(100% - ' + $navbar_height + 'px)'});
+                    $('.popover-region-notifications .popover-region-container').css({'top': $navbar_height+'px'});
+                    $('.popover-region-mail .popover-region-container').css({'top': $navbar_height+'px'});
+
+					$header.slideUp ();
+				} else {
+                    $this.data('expanded', true);
+                    M.util.set_user_preference("expandedNavigation", 0);
+                    sessionStorage.setItem('expand', 1);
+
+                    var $top = parseInt($navbar_height + $header_height +18);
+                    if(animate){
+                        $('.message-drawer').animate({top: $total});
+                    }else{
+                        $('.message-drawer').css({top: $total});
+                    }
+                    $('.message-drawer').css({'height': 'calc(100% - ' + $total  + 'px)'});
+
+					$icon.removeClass ('fa-compress').addClass ('fa-expand');
+                    if(animate){
+                        if(!$navbar.hasClass("frontpage-guest")){
+                            $navbar.animate ({'top': $header_height + 'px'});
+                        }
+                        
+                        $pagelogin.animate ({'margin-top': $header_height + 'px'});
+                        $page.animate({'margin-top': $header_height + 'px'});
+                        $app.animate({top:  ($header_height + $navbar_height)  + 'px'});
+                        $navdrawer.animate ({'margin-top': ($header_height + $navbar_height) + 'px'});
+                        $sidepre.animate({'top': $top + 'px'});
+                        $header.slideDown (400, function () {
+                            $sidepre.removeAttr('style');
+                            $navdrawer.removeAttr('style');
+                            $('.popover-region-notifications .popover-region-container').removeAttr('style');
+                            $('.popover-region-mail .popover-region-container').removeAttr('style');
+                        });
+                    }else{
+                        if(!$navbar.hasClass("frontpage-guest")){
+                            $navbar.css ({'top': $header_height + 'px'});
+                        }
+                        
+                        $pagelogin.css ({'margin-top': $header_height + 'px'});
+                        $page.css({'margin-top': $header_height + 'px'});
+                        $app.css({top:  ($header_height + $navbar_height) + 'px'});
+                        $navdrawer.css ({'margin-top': ($header_height + $navbar_height) + 'px'});
+                        $sidepre.css({'top': $top + 'px'});
+                        $header.slideDown (0, function () {
+                            $sidepre.removeAttr('style');
+                            $navdrawer.removeAttr('style');
+                            $('.popover-region-notifications .popover-region-container').removeAttr('style');
+                            $('.popover-region-mail .popover-region-container').removeAttr('style');
+                        });
+                    }
+				}
+            }
+			var $header = $ ('.header-ayesa');
+			var $header_height = $header.outerHeight ();
+			var $navbar = $ ('.fixed-top.navbar');
+            var $navbar_height = $navbar.outerHeight ();
+
+            if((!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0){
+                $header_height = $header.height();
+                $navbar_height = $navbar.height();
+            } 
+
+			$ ('.context-header-settings-menu').parent ('.d-flex').css ('float', 'right');
+
+			var $navbar = $ ('.fixed-top.navbar');
+			var $sidepre = $ ('#sidepre-blocks');
+			var $pagewrapper = $ ('#page-wrapper');
+			var $pagelogin = $ ('#page-login-index');
+			var $navdrawer = $ ('#nav-drawer');
+
+			var $btnscrollup = $ ('#btn-scroll-up');
+            var $btnscrolldown = $ ('#btn-scroll-down');
+
+            var $expand = sessionStorage.getItem('expand');
+
+			$ ('#expand-compress-menu').click ( function () {
+                expandCompress($(this),true);
+			});
+
+            expandCompress($('#expand-compress-menu'),false);
+
+			$btnscrollup.click (function () {
+				$("html, body").animate({ scrollTop: 0 }, 600);
+			});
+
+            $btnscrolldown.click (function () {
+				$("html, body").animate( { scrollTop: $(document).height() } , 600);
+			});
+
+            var hasVScroll = document.body.scrollHeight > document.body.clientHeight;
+            
+            
+            if(!hasVScroll){
+                $btnscrolldown.css ('display', 'none');
+            }
+            
+			window.onscroll = function() {
+				
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){ 
+                    $btnscrollup.css ('display', 'block');
+                    $btnscrolldown.css ('display', 'none');
+                }
+                else{ 
+                    if(hasVScroll){
+                        $btnscrollup.css ('display', 'none');
+                        $btnscrolldown.css ('display', 'block');
+                    }
+                }
+			};
+		});
+	});
+;
+
+        require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+            CustomEvents.define('#jump-to-activity', [CustomEvents.events.accessibleChange]);
+            $('#jump-to-activity').on(CustomEvents.events.accessibleChange, function() {
+                if (!$(this).val()) {
+                    return false;
+                }
+                $('#url_select_f63e151c31650133').submit();
+            });
+        });
+    ;
+
+require(['jquery'], function() { 
+
+        // -----------------------------------------------------------------------------------------
+        //  * Cookies 
+        // -----------------------------------------------------------------------------------------
+        aceptarCookiesEsencial = function () { 
+            localStorage.setItem("cookiesConsent", "BASIC");
+            changeBodyClass('cookies-consent', 'remove')
+        }
+    
+        aceptarTodasCookies = function () {
+            localStorage.setItem("cookiesConsent", "ALL");
+            changeBodyClass('cookies-consent', 'remove')
+        }
+    
+        $('#esenciales_cookies').on('click', function () {
+            aceptarCookiesEsencial();
+        })
+    
+        $('#todas_cookies').on('click', function () {
+            aceptarTodasCookies();
+        })
+    
+        changeBodyClass = function (clasName, action) { 
+            if (action == 'add') {
+                $('body').addClass(clasName);
+            } else {
+                $('body').removeClass(clasName);
+                $('.app-cookies').remove();
+            }
+        }
+    
+        tabFocusRestrictor = function (lastItem, firstItem) { 
+            $(lastItem).on('blur', function () {
+                $(firstItem).trigger('focus');
+            });
+        }
+    
+        checkCookiesConsent = function () { 
+            var getCookiesConsent = localStorage.getItem("cookiesConsent");
+            
+            if (getCookiesConsent) {
+                changeBodyClass('cookies-consent', 'remove')
+            } else {
+                changeBodyClass('cookies-consent', 'add')
+                $('#emailConfm').trigger('focus', '#todas_cookies');
+            }
+        }
+    
+        if (!$('body').hasClass('cookies-consent')) {
+            checkCookiesConsent();
+        }
+       
+});
+
+;
+
+require(['theme_boost/loader']);
+
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+
+require(['theme_moove/metismenu', 'jquery'], function(metisMenu, $) {
+    $(".metismenu").metisMenu();
+});
+
+require([], function() {
+    var iconsearch = document.querySelector('.moove-search-input .slicon-magnifier');
+    var btnclosesearch = document.querySelector('.search-input-form .close-search');
+    var searchinputform = document.querySelector('.moove-search-input');
+
+    if (iconsearch) {
+
+        var togglesearchinputform = function() {
+            searchinputform.classList.toggle('expanded');
+        }
+
+        iconsearch.onclick = togglesearchinputform;
+        btnclosesearch.onclick = togglesearchinputform;
+    }
+});
+
+
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(735353, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u00daltima modificaci\u00f3n","name":"Nombre","error":"Error","info":"Informaci\u00f3n","yes":"S\u00ed","no":"No","ok":"OK","cancel":"Cancelar","confirm":"Confirmar","areyousure":"\u00bfEst\u00e1 seguro?","closebuttontitle":"Cerrar","unknownerror":"Error desconocido","file":"Archivo","url":"URL","collapseall":"Colapsar todo","expandall":"Expandir todo"},"repository":{"type":"Tipo","size":"Tama\u00f1o","invalidjson":"Cadena JSON no v\u00e1lida","nofilesattached":"No se han adjuntado archivos","filepicker":"Selector de archivos","logout":"Salir","nofilesavailable":"No hay archivos disponibles","norepositoriesavailable":"Lo sentimos, ninguno de sus repositorios actuales puede devolver archivos en el formato solicitado.","fileexistsdialogheader":"El archivo existe","fileexistsdialog_editor":"Un archivo con ese nombre ha sido anexado al texto que Usted est\u00e1 editando","fileexistsdialog_filemanager":"Ya ha sido anexado un archivo con ese nombre","renameto":"Cambiar el nombre a \"{$a}\"","referencesexist":"Existen {$a} enlaces a este archivo","select":"Seleccionar"},"admin":{"confirmdeletecomments":"Est\u00e1 a punto de eliminar comentarios, \u00bfest\u00e1 seguro?","confirmation":"Confirmaci\u00f3n"},"debug":{"debuginfo":"Informaci\u00f3n de depuraci\u00f3n","line":"L\u00ednea","stacktrace":"Trazado de la pila (stack)"},"langconfig":{"labelsep":":"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() { M.util.js_pending('random63e151c3165011'); Y.on('domready', function() { M.util.init_maximised_embed(Y, "resourceobject");  M.util.js_complete('random63e151c3165011'); });
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\r\nMathJax.Hub.Config({\r\n    config: [\"Accessible.js\", \"Safe.js\"],\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"es"});
+});
+Y.use("moodle-filter_glossary-autolinker",function() {M.filter_glossary.init_filter_autolinking({"courseid":0});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random63e151c31650134'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63e151c31650134'); });
+})();
+//]]>
+</script>
+
+
+<div class="app-cookies vw-100 vh-100 position-absolute" id="cookies-page">
+    <div class="d-flex flex-wrap justify-content-center position-fixed w-100 bg-white text-black p-3" id="cookie-info-bar">
+        <div class="d-flex bar-message">
+            <p>Este sitio web utiliza <b>cookies propias y de terceros</b> para ofrecer un mejor servicio. Puede
+                obtener más información en nuestra página <a class="btn btn-transparent text-primary p-0 m-0 border-0" href="https://educacionadistancia.juntadeandalucia.es/centros/almeria/aviso-legal.php" id="legal_page" onfocus="tabFocusRestrictor('#legal_page','#todas_cookies')" role="button" data-original-title="" title=""><u> Aviso Legal</u></a>.<br> Para dar su
+                consentimiento sobre el uso de cookies, pulse en uno de los botones que mostramos a continuación.
+            </p>
+        </div>
+        <div class="d-flex justify-content-center w-100">
+            <button autofocus="" class="btn btn-primary btn-sm py-1 px-3 mx-1 my-0 h-100" id="todas_cookies" type="button" onfocus="tabFocusRestrictor('#todas_cookies','#esenciales_cookies')"> Aceptar todas </button>
+            <button class="btn btn-outline-info btn-sm py-1 px-3 mx-1 my-0 h-100" id="esenciales_cookies" type="button" onfocus="tabFocusRestrictor('#esenciales_cookies','#legal_page')"> Aceptar solo esenciales </button>
+        </div>
+    </div>
+</div>
+
+
+    
+    </body>
+    </html>
