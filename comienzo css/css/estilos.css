@@ -1,4 +1,26 @@
 p{
-    background-color: aqua;
-    
+    background-color: aqua;   
+}
+p.otro{
+    background-color: reds;
+}
+p#identificador{
+    background-color: green;
+}
+
+ul li{
+    background-color:  orange;
+}
+ol li:nth-child(even){
+    background-color: plum;
+}
+table{
+    border: 2px dotted black;
+    border-collapse: collapse;
+}
+tr{
+    border: 2px dotted green;
+}
+td{
+    border: 2px dotted blue;
 }
