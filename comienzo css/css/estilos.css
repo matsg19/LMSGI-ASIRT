@@ -24,3 +24,12 @@ tr{
 td{
     border: 2px dotted blue;
 }
+div{
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+div:hover{
+    width: 300px;
+}
