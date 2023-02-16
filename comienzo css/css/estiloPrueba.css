@@ -82,3 +82,10 @@ section article p{
 section .rojo{ 
     color:red;
 }
+/*reglas de uso de los selectores*/
+section p{
+    color: blue;
+}
+p{ 
+    color:red;
+}
