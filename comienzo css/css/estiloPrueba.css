@@ -1,0 +1,84 @@
+/*Reglas general para todas las etiquetas*/
+*{
+    color: gray;
+    font-style: normal;
+    font-size: medium;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/**/
+
+/*reglas para el encabezado*/
+h1{
+    color: blue;
+    font-size: 12px;
+    border: 2px dotted rgb(123,234,12);
+}
+h1,h2,h3{
+    color:blue;
+}
+div h1{
+    color: orange;
+    border: none;
+}
+/*reglas para los parrofos*/
+p*{
+    color: green;
+    text-align: center;
+    text-decoration: dotted;
+}
+p h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: brown;
+}
+p.clase1{
+    text-decoration: overline;
+    font-size: large;
+}
+p.clase2{
+    background-color: orange;
+    border: 1px solid cyan;
+    color: red ;  /*esto es importante si hay el codigo con una clase*/
+}
+p{
+    color:blue;
+    font-size:12pt;
+}
+.clase1{
+    color: gray;
+}   
+p.groucho{
+    font-weight: bold;
+    font-style: italic;
+}
+p.aviso{
+    color: greenyellow;
+    text-decoration:underline;
+}
+
+/*ejemplo para ver clase y id*/
+.clase{
+    color: green;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: yellow;
+}
+#id{
+    color: green;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: yellow;
+}
+/*encadenando etiquetas*/
+section article p{ 
+    color:red;
+} 
+section .rojo{ 
+    color:red;
+}

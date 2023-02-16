@@ -1,35 +1,93 @@
-p{
-    background-color: aqua;   
+/*
+    Esto es un comentario en CSS
+*/
+
+p {
+    font-weight: bold;
+    text-decoration:line-through;
+    background-color:blueviolet;
 }
 p.otro{
-    background-color: reds;
+    background-color:bisque;
 }
+
 p#identificador{
+    text-decoration: none;
+    background-color:orange;
+}
+/*Ojo con el la jerarquía en el uso de CSS */
+ol li{
+    background-color:rgb(174, 225, 170);
+}
+li:nth-child(even) {
     background-color: green;
 }
 
-ul li{
-    background-color:  orange;
+ul.impar li {
+    background-color: aqua;
 }
-ol li:nth-child(even){
-    background-color: plum;
-}
+
+/*Vamos a pintar la tabla. Fíjate que si pinto la celda puedo estar pintando sobre lo que haga la fila y la tabla*/
 table{
     border: 2px dotted black;
     border-collapse: collapse;
 }
-tr{
-    border: 2px dotted green;
+
+tr:nth-child(even) {
+    background-color: green;
 }
-td{
-    border: 2px dotted blue;
+
+tr:nth-child(even) td{
+    border: 2px solid blue;
 }
-div{
+
+tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+tr.fila{
+    background-color: rgba(112,212,125,1);
+}
+
+/*Vamos a hacer transiciones y animaciones */
+div {
     width: 100px;
     height: 100px;
     background: red;
     transition: width 2s;
-}
-div:hover{
+  }
+  
+  div:hover {
     width: 300px;
+  }
+
+  div#animated_div:active {
+    width:70px;
+    height:47px;
+    background: #92B901;
+    color: #ffffff;
+    position: relative;
+    font-weight:bold;
+    font-size:20px;
+    padding:10px;
+    animation:animated_div 5s 1;
+    -moz-animation:animated_div 5s 1;
+    -webkit-animation:animated_div 5s 1;
+    -o-animation:animated_div 5s 1;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    }
+    
+    @keyframes animated_div
+    {
+    0% {transform: rotate(0deg);left:0px;}
+    25% {transform: rotate(20deg);left:0px;}
+    50% {transform: rotate(0deg);left:500px;}
+    55% {transform: rotate(0deg);left:500px;}
+    70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+    100% {transform: rotate(-360deg);left:0px;}
+    }
+h1{
+    animation: animated_div 5s 1;
+    -webkit-animation: animated_div 5s 1;
 }
