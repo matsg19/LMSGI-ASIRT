@@ -1,3 +1,4 @@
+
 #intro:target{
     color:blue;
 }
@@ -38,8 +39,76 @@ p:target {
   }
 
 div.imagenFondo{
-    background-image: url("https://i.blogs.es/debdc9/1629460557_098553_1629460592_portada_normal/840_560.jpeg");
+    background-image: url("https://assets.website-files.com/5bba38b924337cf5342f4855/5bee3aaa2834e070fa9ed86d_Silver%20star_w%20shadow.png"),url("https://i.blogs.es/debdc9/1629460557_098553_1629460592_portada_normal/840_560.jpeg");
     width:100%;
     height:300px;
-    background-size:auto;
+    /*background-size: contain;*/
+    background-size: 100% 100%;
+    /*background-repeat: no-repeat;*/
+    /*background: no-repeat url("https://i.blogs.es/debdc9/1629460557_098553_1629460592_portada_normal/840_560.jpeg");*/
+}
+div{
+    display: block;
+    height: 200px;
+    overflow: auto;
+    width: 60%;
+}
+div img{
+    width: inherit;
+}
+div.degradado{
+    background: linear-gradient(red,yellow,green);
+}
+div.background{
+    background: url("https://i.blogs.es/debdc9/1629460557_098553_1629460592_portada_normal/840_560.jpeg") 100% no-repeat;
+}
+
+h2{
+    font-family: 'Gloock','Time New Roman','Arial';
+}
+/*Trabajando con nav*/
+nav{
+    vertical-align: middle;
+    background-color: white;
+    border-color: red;
+    border-style: dotted;
+    border-radius: 20% 30% 10% 20%;
+    -webkit-border-radius: 20% 30% 10% 20%;
+    -moz-border-radius: 20% 30% 10% 20%;
+    -ms-border-radius: 20% 30% 10% 20%;
+    -o-border-radius: 20% 30% 10% 20%;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;   
+}
+nav ul li a:hover{
+    background-color: black;
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+/*trabajando con listas*/
+ul li{
+    list-style: url("/comienzo css/media/rocketck.png");
+}
+/*trabajando con tablas*/
+table{
+    border-collapse: collapse;
+}
+thead{
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+}
+tbody{
+    background-color: pink;
+    color: black;
+}
+td{
+    border: 2px red dotted;
 }
