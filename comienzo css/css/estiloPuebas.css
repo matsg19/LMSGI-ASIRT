@@ -1,0 +1,57 @@
+/*Reglas generales para todas las etiquetas */
+*{
+    color:gray;
+    font-style:normal;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}  
+
+/*Regla para el encabezado h1 */
+h1{
+    font-size:12px;
+    border-color: rgb(123,234,12);
+    border-style: dotted;
+    border-width: 2px;
+   /* border: 2px dotted rgb(123,234,12);*/
+}
+/*Regla de encabezado dentro de div */
+div h1{
+    border:none;
+}
+/* Reglas para los párrafos */
+p {
+    color:green ;
+    text-align: center;
+}
+/*Reglas especiales de párrafos que tienen clase */
+/*Clase e ID genéricos */
+.clase{
+    color:aqua;
+    text-shadow: 2px;
+}
+#ide{
+    color:blue;
+    text-decoration:wavy;
+}
+/*Clase asociada al párrafo*/
+p.clase1{
+    text-decoration:overline;
+    font-size: larger;
+}
+p.clase2{
+    background-color: orange;
+    border:1px solid cyan;
+}
+
+p.groucho{
+    font-weight: bold;
+    font-style:italic;
+}
+
+p.aviso{
+    text-decoration: underline;
+}
+
+/*Analizar situación de parentesco*/
+/* section h1{color:red;} */
+section > h1{  color:red;}

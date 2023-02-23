@@ -1,0 +1,45 @@
+#intro:target{
+    color:blue;
+}
+/*Pseudoclases sobre enlaces*/
+a.enlace{
+    text-decoration:none;
+}
+a.enlace2:visited{
+    color:gray; text-decoration:underline;
+}
+a.enlace3:hover{
+    background-color: #f44336; color: white;   
+    padding: 14px 25px;
+}
+
+p:target {
+    background-color: gold;
+  }
+  
+  /* Agrega un pseudo-elemento dentro del elemento de destino */
+  p:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: .25em;
+  }
+  
+  /* Estilo de elementos en cursiva dentro del elemento de destino */
+  p:target i {
+    color: rgb(255,100,50);
+  }
+
+  body{
+    background-color:grey;
+  }
+  p{
+    color:black;
+  }
+
+div.imagenFondo{
+    background-image: url("https://i.blogs.es/debdc9/1629460557_098553_1629460592_portada_normal/840_560.jpeg");
+    width:100%;
+    height:300px;
+    background-size:auto;
+}
