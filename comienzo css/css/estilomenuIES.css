@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  /*Borde y posición del nav*/
+  nav{
+    position:sticky; position:-webkit-sticky; top:0; /* Posición sticky en top */
+    width:70%;
+    height:10%;
+    margin:auto; /*Centra el nav*/
+    background-color:white;
+    /*Centrarnav*/border-color:red;
+    border-style: dotted;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+    -webkit-border-radius:15px;
+  }
+  
+  /*Quitar estilo <li> a <ul> */
+  nav ul {
+    list-style:none;
+  }
+  
+  /* items del menu */
+  nav ul li {
+    display:inline-block;
+    width:15.33%;
+    height:100%;
+    
+  }
+     
+  /* items del menu desplegable */
+  nav ul ul li {
+    display:block;
+    width:100%;
+  }
+  
+  /* items del menu desplegable al pasar el ratón */   
+  nav ul li:hover > ul {
+    display:block;
+  }  
+  
+  /* Posición del menú desplegable. Primer nivel */
+  nav ul ul{
+    display:none; /*No se visualiza mientras no haya evento hover */
+    position:absolute; /*Posición respecto del nav */
+    bottom:auto;
+    background:#eee;
+  }
+  /* Posiciñon del menú desplegable. Segundo nivel */
+  nav ul ul ul{
+    display:none; /*No se visualiza mientras no haya evento hover */
+    position:absolute; /*Posición respecto del ul */
+    top:16.3%;
+    left:100%;
+  }
+  
+  /* Posiciñon del menú desplegable. Tercer nivel */
+  nav ul ul ul ul{
+    display:none; /*No se visualiza mientras no haya evento hover */
+    position:absolute; /*Posición respecto del ul */
+    top:0%;
+    left:100%;
+  }
+  
+  /*Formato de los enlaces */
+  nav ul li a {
+    display:block;
+    color: red;
+    text-decoration:none;
+    font-size:16px;
+    width:100%;
+    height:100%;
+    letter-spacing:1px;
+    padding:10px 15px;
+  }
+   
+  /* efecto al pasar el ratón por los items del menu */   
+  nav a:hover {
+  background-color:black;
+  color:gray;
+  }
+  
+  /* Icono en los desplegables */
+  nav a i{
+    float:right;
+  }
+     

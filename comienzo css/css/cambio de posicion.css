@@ -1,0 +1,45 @@
+div{
+    padding: 10px;
+    margin: 10px;
+}
+div.Rojo{
+    width: 15%;
+    background-color: red;
+    float: left;
+}
+div.Azul{
+    background-color: blue;
+    width: 15%;
+    /* position:absolute; */
+    /* top: 300px;*/
+    /*right: 200px;*/
+    z-index: 3; 
+    float: right;
+}
+div.Verde{
+    background-color: green;
+    width: 15%;
+    /* position: absolute; */
+    /* top: 100px; */
+    /* left: 50px; */
+    z-index: 5;
+    float:  left;
+}
+div.Amarillo{
+    background-color: yellow;
+    width: 15%;
+    /* position: absolute; */
+    /* top: 100px; */
+    /* left: 50px; */
+    z-index: 5;
+    float:  left;
+}
+/*poner la imagen del violeta se ponen a la derecha*/
+div.Violeta img{
+    float: right;
+    
+}
+div.Violeta{
+    border: 1px solid violet;
+    overflow: auto;
+}
