@@ -1,3 +1,4 @@
+@import url{'https://fonts.googleapis.com/css2?family=playball'};
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,8 +7,57 @@
     font-family: "Playball", sans-serif ;
 }
 
-header,footer{
+header h1{
     background-color:rgb(212, 50, 50);
-    width: 100%;
-    height: 5%;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 5px 5px 20px 5px;
+}
+footer h2{
+    background-color:  rgb(212, 50, 50);
+}
+main{
+    margin: 3% 7%;
+    padding: 0.5%;
+    border-left: red 3px solid ;
+    border-right: red 3px solid;
+}
+section{
+    margin: 5%;
+    background-color: bisque;
+    margin-bottom: 5%;
+    overflow: auto;
+}
+section h2,h2{
+    color: white;
+    background-color: rgb(42, 116, 17);
+}
+section.siglo19 h2 ,h3{
+    color: blue;
+    background-color: yellowgreen;
+}
+section.siglo19{
+    background-color: aqua;
+}
+section article{
+    margin: 3% 10%;  
+    background-color: white; 
+}
+article img{
+    width: 100px;
+    height: 200px;
+    overflow: auto;
+}
+article figure{
+    display: block;
+    float: right;
+    padding: 2% 5%;
+    border-left: orange 1px dotted ;
+    margin: 0 2%;
+}
+article p{
+    display: block;
+    width: 70%;
+    text-align: justify;
+    padding: 5%;
 }
