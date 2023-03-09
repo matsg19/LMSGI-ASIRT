@@ -1,0 +1,79 @@
+/* .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  } */
+  /*card de ventas de internet*/
+  article.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 15%;
+    height: 15%;
+  }
+article.card img{
+    height: 50%;
+    border-radius: 10% 50% / 20% 30%;
+    -webkit-border-radius: 10% 50% / 20% 30%;
+    -moz-border-radius: 10% 50% / 20% 30%;
+    -ms-border-radius: 10% 50% / 20% 30%;
+    -o-border-radius: 10% 50% / 20% 30%;
+}
+article.card .price{
+    color: blue;
+    font-size: 22px;
+    width: 20%;
+}
+article.card button{
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+article.card button:hover{
+    opacity: 0.7;
+}
+
+
+article.cad div.text{
+    height: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

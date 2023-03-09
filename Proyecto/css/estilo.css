@@ -15,20 +15,27 @@ header{
 header nav.inicio {
     background-color: aqua;
     display: flex;
-    flex-direction: row;
 }
-/* nav.inicio ul{
-    background-color: rebeccapurple;
-} */
-nav.inicio ul li{
+nav.inicio ul{
+    display: flex;
+    text-decoration-line: overline;
+    -moz-text-decoration-line: overline;
+}
+header nav.inicio ul li{
     background-color: rosybrown;
     display: flex;
-    float: right;
-    align-items: stretch;
-    
+    align-items: space-between;
+    justify-content: space-between; 
 }
-
-
+header nav.contenido{
+    display: flex;
+    flex-direction: column;
+}
+header nav.contenido figure.logo{
+    display: flexd;
+    width: 20%;
+    height: 10%;
+}
 /*Esta es la parte de la main*/
 main{
     border: 1px solid black;
