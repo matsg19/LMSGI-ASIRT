@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header, nav, main, footer {
+    font-size: 2rem;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 200px 200px;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header header header"
+        "nav nav footer"
+        "main main footer";
+  
+  }
+  header {
+    grid-area: header;
+    background: skyblue;
+    height: 3rem;
+  }
+  
+  nav {
+    grid-area: nav;
+    background: tomato;
+    height: 12rem;
+  }
+  
+  main {
+    grid-area: main;
+    background: aliceblue;
+    height: 20rem;
+  }
+  
+  footer {
+    grid-area: footer;
+    background: lightgreen;
+    height: 15rem;
+  }

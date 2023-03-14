@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página web del instituto Cura Valera</title>
+    <title>Document</title>
     <meta name="description" content="Página web del instituto">
     <meta name="keywords" content="HTML5, CSS3, Javascript">
     <link rel="icon" type="image/x-icon" href="./media/imagenes/favicon.ico">
@@ -14,159 +13,111 @@
     <script src="./js/javascript.js"></script>
     <script src="https://kit.fontawesome.com/db7d235ee4.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <!-- <header style="background: linear-gradient(rgb(255, 255, 255) 10%, transparent 90%),  url('./media/imagenes/headerIES.jpg') no-repeat" > -->
-    <header style="background-color:red; height:300px">
-        <div id="logo">
+    <header>
+        <div class="encabezado">
             <figure>
-                <img src="./media/imagenes/logo.png" width="100px" height="100px" />
+                <img src="./media/Logo.png" alt="logo del instituto">
             </figure>
+            <div class="texto">
+                <h1><a href="#">IES CURA VALERA, HUERCAL HOVERA</a> </h1>
+                <h3>Junta de Andalucia</h3>
+                <div class="buscar">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"> Search</i></a>
+                </div>
+            </div>
         </div>
-        <div id="textoCabecera">
-            <a href="#">
-                <h1> INSTITUTO CURA VALERA</h1>
-            </a>
-            <h2> Junta de Andalucía</h2>
-        </div>
-        <div class="buscar">
-            <a href="#">
-                <h3><i class="fa-solid fa-magnifying-glass"></i>SEARCH</h3>
-            </a>
-        </div>
-        <nav style="background-color:rgb(199, 227, 59)">
-            <a href="#">Inicio </a> <a href="#">Noticias </a> <a href="#">Oferta Educativa </a> <a href="#">Vídeos y
-                fotos </a> <a href="#">Contacto </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Inicio  <i class="fa-solid fa-circle-plus"></i> </a>
+                    <ul>
+                        <li><a href="#">Acceso</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Noticias  <i class="fa-solid fa-circle-plus"></i> </a>
+                    <ul>
+                        <li><a href="#">Plan de igualdad</a></li>
+                        <li><a href="#">Adulto</a>
+                            <ul>
+                                <li><a href="#">BTOPA</a>
+                                    <ul>
+                                        <li><a href="#">Primero Bachillerato </a></li>
+                                        <li><a href="#">Segundo Bachillerato</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">ESPA</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Jefatura de estudios</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Jefatura de estudios <i class="fa-solid fa-circle-plus"></i></a>
+                    <ul>
+                        <li><a href="#">Oferta educativa</a></li>
+                        <li><a href="#">Bibliteca escolar</a></li>
+                        <li><a href="#">Departamentos</a></li>
+                        <li><a href="#">BTOPA</a></li>
+                        <li><a href="#">ESPA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Oferta educativa  </a></li>
+                <li><a href="#">Vídeos y fotos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
         </nav>
 
     </header>
-    <main style="background-color:orange;">
-        <section style="background-color:aqua">
-            <article style="background-color:rgb(218, 153, 214)">
-                <h5>Adultos...</h5>
-                <hr />
-                <a href="#">
-                    <h4>Acceso a plataforma de semipresencial</h4>
-                </a>
-            </article>
-            <article style="background-color:rgb(218, 153, 214)">
-                <h5>Adultos...</h5>
-                <hr />
-                <a href="#">
-                    <h4>Horarios nocturno 2022/2023</h4>
-                </a>
-            </article>
-            <article style="background-color:rgb(218, 153, 214)">
-                <h5>Adultos...</h5>
-                <hr />
-                <a href="#">
-                    <h4>Reunión de comienzo curso</h4>
-                </a>
-            </article>
-            <article style="background-color:rgb(218, 153, 214)">
-                <h5>IES CURA VALERA</h5>
-                <hr />
-                <a href="#">
-                    <h4>Horario escolar 2022/2023</h4>
-                </a>
-            </article>
-            <article style="background-color:rgb(218, 153, 214)">
-                <h5>IES CURA VALERA</h5>
-                <hr />
-                <a href="#">
-                    <h4>Calendario de exámenes septiembre de 1º Bachillerato y 1º BTOPA</h4>
-                </a>
-            </article>
-            <article style="background-color:rgb(218, 153, 214)">
-                <h5>IES CURA VALERA</h5>
-                <hr />
-                <a href="#">
-                    <h4>Programa "Andalucía profundiza"</h4>
-                </a>
-            </article>
+    <main>
+        <section>
+            <img src="./media/main1.jpg" alt="">
         </section>
+        <aside>
+            <img src="./media/aside.jpg" alt="">
+        </aside>
     </main>
-    <aside style="background-color:rgb(113, 207, 195)">
-        <article style="background-color:rgb(66, 198, 59)">
-            <h4>Publicidad de la biblioteca</h4>
-            <figure>
-                <img src="./media/imagenes/BiblioWeb.png" width="120px" height="75px" alt="Acceso a la biblioteca" />
-                <p><a href="#">BiblioWeb: catálogo, reservas, etc</a><br />
-                    <a href="#">Blog y diario</a>
+    
+    <footer>
+        <div class="contenido">
+            <div class="calendario">
+                <h2>CALENDARIO</h2>
+                <img src="./media/calendario.png" alt="">
+            </div>
+            <div class="enlaces">
+                <h2>ENLACES DE INTERES</h2>
+                <ul class="enlace">
+                    <li><a href="#">Aula Semipresencial</a></li>
+                    <li><a href="#">Aula virtual</a></li>
+                    <li><a href="#">Aula Informática antigua</a></li>
+                    <li><a href="#">Aula informática nueva</a></li>
+                    <li><a href="#">Web 50 aniversario</a></li>
+                    <li><a href="#">Web antigua</a></li>
+                    <li><a href="#">Consejería de Educación</a></li>
+                    <li><a href="#">Séneca</a></li>
+                    <li><a href="#">Pasen</a></li>
+                </ul>
+            </div>
+            <div class="encuentranos">
+                <h2>Encuéntranos en..</h2>
+                <p>
+                    DIRECCIÓN POSTAL: <br>
+                    Avda. Guillermo Reyna, 35<br>
+                    04600 HUÉRCAL-OVERA<br>
+                    Almería<br> <br>
                 </p>
-                <figure>
-                    <a href="#"><img src="./media/imagenes/default_email.png" alt="Mandar mensaje" /></a>
-                    <a href="#"><img src="./media/imagenes/default_facebook.png" alt="Facebook" /></a>
-                    <a href="#"><img src="./media/imagenes/default_instagram.png" alt="Instagram" /></a>
-                    <a href="#"><img src="./media/imagenes/default_twitter.png" alt="Twitter" /></a>
-                    <a href="#"><img src="./media/imagenes/default_youtube.png" alt="Youtube" /></a>
-                </figure>
-            </figure>
-        </article>
-
-        <article style="background-color:rgb(119, 150, 216)">
-            <h4>Encuéntranos en..</h4>
-            <p>
-                DIRECCIÓN POSTAL:<br />
-                Avda. Guillermo Reyna, 35<br />
-                04600 HUÉRCAL-OVERA<br />
-                Almería<br />
-
-                DIRECCIÓN ELECTRÓNICA:<br />
-                http://www.iescuravalera.es <br />
-                04002714.edu@juntadeandalucia.es <br />
-            </p>
-        </article>
-        <article style="background-color:rgb(218, 153, 214)">
-            <h4>Búsqueda...</h4>
-            <form>
-                <input type="text" placeholder="Buscar..." name="busqueda" /><br />
-                <input type="submit" value="Buscar" />
-            </form>
-        </article>
-    </aside>
-    <footer style="background-color:rgb(96, 96, 118);">
-        <div class="calendario" style="background-color:aqua; ">
-            <h3>CALENDARIO</h3>
-            <figure>
-                <img src="./media/imagenes/download.png" alt="calendarioFebrero" width="100px" height="100px" />
-            </figure>
+                <p>
+                    DIRECCIÓN ELECTRÓNICA: <br>
+                    <a href="http://www.iescuravalera.es">http://www.iescuravalera.es</a><br>
+                    <a href="04002714.edu@juntadeandalucia.es ">04002714.edu@juntadeandalucia.es </a> 
+                </p>
+            </div>
         </div>
-        <div class="enlaces" style="background-color:orange; ">
-            <h3>Enlaces de interés</h3>
-            <ul>
-                <li> Aula Semipresencial </li>
-                <li> Aula virtual </li>
-                <li> Aula Informática antigua </li>
-                <li> Aula informática nueva </li>
-                <li> Web 50 aniversario </li>
-                <li> Web antigua </li>
-                <li> Consejería de Educación </li>
-                <li> Séneca </li>
-                <li> Pasen </li>
-            </ul>
-        </div>
-        <div class="RedesSociales" style="background-color:white">
-            <h3>Encuéntranos en..</h3>
-            <p>
-                DIRECCIÓN POSTAL:<br />
-                Avda. Guillermo Reyna, 35<br />
-                04600 HUÉRCAL-OVERA<br />
-                Almería<br />
-
-                DIRECCIÓN ELECTRÓNICA:<br />
-                http://www.iescuravalera.es <br />
-                04002714.edu@juntadeandalucia.es <br />
-            </p>
-            <figure>
-                <a href="#"><img src="./media/imagenes/default_email.png" alt="Mandar mensaje" /></a>
-                <a href="#"><img src="./media/imagenes/default_facebook.png" alt="Facebook" /></a>
-                <a href="#"><img src="./media/imagenes/default_instagram.png" alt="Instagram" /></a>
-                <a href="#"><img src="./media/imagenes/default_twitter.png" alt="Twitter" /></a>
-                <a href="#"><img src="./media/imagenes/default_youtube.png" alt="Youtube" /></a>
-            </figure>
-        </div>
+        <nav>
+            <a href="#">INICIO</a>
+            <a href="#">NOTICIAS</a>
+            <a href="#">OFERTA EDUCATIVA</a>
+            <a href="#">CONTACTO</a>
+        </nav>     
     </footer>
 </body>
-
 </html>

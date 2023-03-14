@@ -1,3 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 1000px;
+}
+/*Contenido de la cabezera*/
 header{
-    background-color: white;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(rgb(255,255,255) 10%, transparent 90%),url("../media/campo1.jpg");
+    background-size: cover;
+}
+header div.encabezado{
+    display: flex;
+    flex: row nowrap;
+    width: 100%;
+    height: 25%;
+    padding: 2%;
+    gap: 5%;
+}
+header div.encabezado figure{
+    width: 10%;
+    height: 90px;
+    align-self: center;
+}
+header div.encabezado div.texto{
+    width: 75%;
+    align-self: center;
+    text-align: left;
+}
+header div.encabezado div.texto h1 a{
+    color: black;
+    text-decoration: none;
+}
+header div.encabezado div.texto h1 a:hover{
+    color: red;
+}
+header div.encabezado div.texto h3{
+    color: blueviolet;
+}
+header div.encabezado div.buscar{
+    width: 15%;
+    align-self: center;
+    text-align: right;
+}
+header div.encabezado div.buscar a:hover{
+    color: red;
+}
+/*Borde y posición del nav*/
+header nav{
+    position:sticky; position:-webkit-sticky; top:0; /* Posición sticky en top */
+    width:80%;
+    height:15%;
+    margin:auto; /*Centra el nav*/
+    background-color:white;
+    /*Centrarnav*/border-color:red;
+    border-style: dotted;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+    -webkit-border-radius:15px;
+  }
+  
+  /*Quitar estilo <li> a <ul> */
+  header   nav ul {
+    list-style:none;
+  }
+  
+  /* items del menu */
+  header nav ul li {
+    display:inline-block;
+    width:15.33%;
+    height:100%;
+    
+  }
+     
+  /* items del menu desplegable */
+  header nav ul ul li {
+    display:block;
+    width:100%;
+  }
+  
+  /* items del menu desplegable al pasar el ratón */   
+  header nav ul li:hover > ul {
+    display:block;
+  }  
+  
+  /* Posición del menú desplegable. Primer nivel */
+  header nav ul ul{
+    display:none; /*No se visualiza mientras no haya evento hover */
+    position:absolute; /*Posición respecto del nav */
+    bottom:auto;
+    background:#eee;
+  }
+  /* Posiciñon del menú desplegable. Segundo nivel */
+  header nav ul ul ul{
+    display:none; /*No se visualiza mientras no haya evento hover */
+    position:absolute; /*Posición respecto del ul */
+    top:16.3%;
+    left:100%;
+  }
+  
+  /* Posiciñon del menú desplegable. Tercer nivel */
+  header nav ul ul ul ul{
+    display:none; /*No se visualiza mientras no haya evento hover */
+    position:absolute; /*Posición respecto del ul */
+    top:0%;
+    left:100%;
+  }
+  
+  /*Formato de los enlaces */
+  header nav ul li a {
+    display:block;
+    color: red;
+    text-decoration:none;
+    font-size:16px;
+    width:100%;
+    height:100%;
+    letter-spacing:1px;
+    padding:10px 15px;
+  }
+   
+  /* efecto al pasar el ratón por los items del menu */   
+  header nav a:hover {
+  background-color:black;
+  color:gray;
+  }
+  
+  /* Icono en los desplegables */
+  header  nav a i{
+    float:right;
+  }
+/*Contenido del cuerpo*/
+main{
+    display: flex;
+    flex: row nowrap;
+}
+section{
+    height: 45%;
+    width: 80%;
+}
+aside{
+    width: 20%;
+    height: 45%;
+}
+/*Contenido de la cabezera*/
+footer{
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    color: gray;
+}
+footer nav{
+    width: 100%;
+    height: 10%;
+    background-color: grey;
+}
+footer nav a {
+    color: white;
+    text-decoration: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+footer nav a:hover{
+    color: yellowgreen;
+} 
+footer div.contenido{
+    width: 100%;
+    height: 90%;
+}
+
+footer div.contenido{
+    width: 100%;
+    display: flex;
+    flex: row nowrap;
+}
+footer div p{
+    margin: 20px;
+}
+footer div a{
+    color: white;
+    text-decoration: none;
+}
+footer div a:hover{
+    color: gray;
+}
+footer div li{
+    font-weight: bold;
+}
+footer div.calendario{
+    width: 33%;
+    border-right: 2px red solid;
+    padding: 1%;
+}
+footer div.calendario img{
+    object-fit: fill;
+}
+footer div.encuentranos{
+    border-left: 2px green solid;
+    padding: 1%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
