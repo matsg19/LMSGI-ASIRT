@@ -15,30 +15,32 @@ header{
 header nav.inicio {
     width: 100%;
     height: 5%;
-    display: flex;
+    display: inline-block;
     flex: row nowrap;
 }
 nav.inicio ul{
     display: flex;
     text-decoration: overline;
+    background-color: rgb(184, 17, 17);
 }
 header nav.inicio ul li{
-    background-color: rosybrown;
-    display: flex;
-    align-items: space-between;
-    justify-content: space-between; 
+   display: inline;
+   align-self: center;
+   text-decoration: overline;
 }
 /*Esta es la parte del contenido*/
 header nav.contenido{
+    width: 100%;
+    height: 5%;
     display: flex;
-    flex-direction: row nowrap;
+    flex: row nowrap;
 }
-header nav.contenido figure.logo img{
+header figure.logo img{
     display: flexd;
     width: 200px;
 
 }
-header div ul figure.categorias img{
+header div ul figure.categoria img{
     width: 100px;
 }
 /*Esta es la parte de la main*/
@@ -53,8 +55,70 @@ main{
 /*Esta es la parte de la footer*/
 footer{
     border: 1px solid black;
-    background-color: bisque;
+    background-color: rgb(61, 56, 56);
+    color: grey;
     width: 100%;
-    height: 30%;
-    float: left
+    height: 50%;
+    /* display: grid;
+    flex-wrap: nowrap;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-area: 
+    "envio metodopago metodopago metodopago"
+    "contacto empresa servicios ofertaycam "
+    ". sociales app app"; */
+}
+footer div.envio{
+    width: 30%;
+    display: flex;
+    float: left;
+    grid-area: envio;
+}
+footer div.envio p{
+    display: flex;
+    flex-direction: row;
+}
+footer div.metodopago{
+    width: 70%;
+    display: flex;
+    grid-area: metodopago;
+}
+footer div.metodopago button{
+    width: 7%;
+}
+footer div.metodopago button i{
+    color: rgb(61, 56, 56);
+}
+footer div.contacto{
+    width: 20%;
+    display: flex;
+    float: left;
+    grid-area: contacto;
+}
+footer div.empresa{
+    width: 20%;
+    display: flex;
+    float: left;
+    grid-area: empresa;
+}
+footer div.servicio{
+    width: 20%;
+    display: flex;
+    float: left;
+    grid-area: servicio;
+}
+footer div.oferteycam{
+    width: 20%;
+    display: flex;
+    grid-area: ofertaycam;
+}
+footer div.sociales{
+    width: 20%;
+    display: flex;
+    grid-area: sociales;
+}
+footer div.app{
+    width: 20%;
+    display: flex;
+    grid-area: app;
 }
