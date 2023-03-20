@@ -4,11 +4,15 @@
     margin: 0;
     padding: 0;
 }
+body{
+    height: 2000px;
+    width: 100%;
+}
 header{
     border: 1px solid black;
     background-color: antiquewhite;
     width: 100%;
-    height: 40%;
+    height: 20%;
     float: left;
 }
 /*Esta es la parte del primer inico*/
@@ -48,9 +52,10 @@ main{
     border: 1px solid black;
     background-color: brown;
     width: 100%;
-    height: 40%;
+    height: 80%;
     float: left
 }
+
 
 /*Esta es la parte de la footer*/
 footer{
@@ -58,67 +63,36 @@ footer{
     background-color: rgb(61, 56, 56);
     color: grey;
     width: 100%;
-    height: 50%;
-    /* display: grid;
-    flex-wrap: nowrap;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto;
+    height: 30%;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10%;
+    grid-template-rows: 20% 20% 20%;
     grid-area: 
     "envio metodopago metodopago metodopago"
     "contacto empresa servicios ofertaycam "
-    ". sociales app app"; */
+    ". sociales app app";
 }
 footer div.envio{
-    width: 30%;
-    display: flex;
-    float: left;
     grid-area: envio;
 }
-footer div.envio p{
-    display: flex;
-    flex-direction: row;
-}
 footer div.metodopago{
-    width: 70%;
-    display: flex;
     grid-area: metodopago;
 }
-footer div.metodopago button{
-    width: 7%;
-}
-footer div.metodopago button i{
-    color: rgb(61, 56, 56);
-}
 footer div.contacto{
-    width: 20%;
-    display: flex;
-    float: left;
     grid-area: contacto;
 }
 footer div.empresa{
-    width: 20%;
-    display: flex;
-    float: left;
     grid-area: empresa;
 }
 footer div.servicio{
-    width: 20%;
-    display: flex;
-    float: left;
     grid-area: servicio;
 }
 footer div.oferteycam{
-    width: 20%;
-    display: flex;
     grid-area: ofertaycam;
 }
 footer div.sociales{
-    width: 20%;
-    display: flex;
     grid-area: sociales;
 }
 footer div.app{
-    width: 20%;
-    display: flex;
     grid-area: app;
 }
