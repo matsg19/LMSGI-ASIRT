@@ -5,56 +5,92 @@
     padding: 0;
 }
 body{
-    height: 2000px;
     width: 100%;
+    height: 2000px;
 }
 header{
-    border: 1px solid black;
-    background-color: antiquewhite;
+    background-color: rgb(215, 27, 27);
     width: 100%;
-    height: 20%;
-    float: left;
+    height: 10%;
 }
 /*Esta es la parte del primer inico*/
 header nav.inicio {
     width: 100%;
-    height: 5%;
-    display: inline-block;
-    flex: row nowrap;
+    height: 20%;
+    color: white;
+    background-color: rgb(169, 37, 37);
 }
-nav.inicio ul{
+header nav.inicio ul{
     display: flex;
-    text-decoration: overline;
-    background-color: rgb(184, 17, 17);
+    justify-content: center;
 }
 header nav.inicio ul li{
-   display: inline;
-   align-self: center;
-   text-decoration: overline;
+    justify-content: center;
+    padding-left:10%;
+    justify-content: space-around;
+}
+header nav.inicio ul li a{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    justify-content: space-around;
 }
 /*Esta es la parte del contenido*/
 header nav.contenido{
     width: 100%;
-    height: 5%;
+    height: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+header nav.contenido ul{
     display: flex;
-    flex: row nowrap;
+    text-decoration: none;
+    justify-content: space-around;
 }
-header figure.logo img{
-    display: flexd;
-    width: 200px;
-
+header nav.contenido ul li{
+    color: white;
+    padding: 1%;
+    justify-content: center;
 }
-header div ul figure.categoria img{
-    width: 100px;
+/*esta parte hace que al pasar el raton por encima se ponga una linea por debajo*/
+header nav.contenido ul li:hover{
+    text-decoration:underline;
+}
+header nav.categoria{
+    width: 100%;
+    display: flex;
+    height: 15%;
+}
+header nav.categoria figure{
+    width: 30%;
+}
+header nav.categoria figure img{
+    width: 100%;
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 7%;
+}
+header nav.categoria button{
+    align-items: center;
+    margin-top: 10%;
 }
 /*Esta es la parte de la main*/
 main{
     border: 1px solid black;
-    background-color: brown;
     width: 100%;
     height: 80%;
     float: left
 }
+/*Esta es la parte de la oferta */
+main div{
+    width: 100%;
+    height: 30%;
+}
+main div section.renovo{
+    width: 50%;
+    height: 30%;
+}
+
 
 
 /*Esta es la parte de la footer*/
@@ -65,9 +101,9 @@ footer{
     width: 100%;
     height: 30%;
     display: grid;
-    grid-template-columns: 10% 10% 10% 10%;
-    grid-template-rows: 20% 20% 20%;
-    grid-area: 
+    grid-template-areas: 10% 10% 10% 10%;
+    grid-template-areas: 20% 20% 20%;
+    grid-template-areas: 
     "envio metodopago metodopago metodopago"
     "contacto empresa servicios ofertaycam "
     ". sociales app app";
@@ -78,6 +114,9 @@ footer div.envio{
 footer div.metodopago{
     grid-area: metodopago;
 }
+footer div.metodopago button{
+    width: 100px;
+}
 footer div.contacto{
     grid-area: contacto;
 }
@@ -85,7 +124,7 @@ footer div.empresa{
     grid-area: empresa;
 }
 footer div.servicio{
-    grid-area: servicio;
+    grid-area: servicios;
 }
 footer div.oferteycam{
     grid-area: ofertaycam;
