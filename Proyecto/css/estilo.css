@@ -79,18 +79,42 @@ main{
     border: 1px solid black;
     width: 100%;
     height: 80%;
-    float: left
 }
 /*Esta es la parte de la oferta */
 main div{
     width: 100%;
     height: 30%;
+    display: flex;
 }
-main div section.renovo{
+main div.oferta{
+    width: 100%;
+}
+main div.oferta section.renovo{
     width: 50%;
-    height: 30%;
+    height: 50%;
+    align-content: center;
 }
-
+main div.oferta section.ahorro{
+    width: 50%;
+    height: 50%;
+    align-content: center;
+    border-radius: 0% 0% 0% 50%;
+    border: 1px solid black;
+    -webkit-border-radius: 0% 0% 0% 50%;
+    -moz-border-radius: 0% 0% 0% 50%;
+    -ms-border-radius: 0% 0% 0% 50%;
+    -o-border-radius: 0% 0% 0% 50%;
+}
+main div.articulos{
+    display: flex;
+}
+main div.articulos section article{
+    display: flex;
+}
+main div.articulos section article figure{
+    border: 1px solid black;
+    padding-left:2%;
+}
 
 
 /*Esta es la parte de la footer*/
