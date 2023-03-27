@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 1000px;
+}
+div{
+    width: 100%;
+    height: 30%;
+    margin: 2%;
+}
+div.uno{
+    background-color: red;
+}
+div.dos{
+    background-color: blueviolet;
+}
+div.tres{
+    background-color: green;
+}

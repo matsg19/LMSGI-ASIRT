@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex: row wrap;
+    background-color: blueviolet;
+}
+div{
+    width: 100%;
+    height: 30%;
+    margin: 2%;
+}
+div.uno{
+    background-color: red;
+}
+div.dos{
+    background-color: blueviolet;
+}
+div.tres{
+    background-color: green;
+}
+@media screen and (max-witch: 900px){
+    body{
+        background-color: orange;
+        
+    }
+}
+@media screen and (max-witch: 500px){
+    body{
+        background-color: olivedrab;
+        display: flex;
+        flex: column;
+    }
+
+}

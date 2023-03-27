@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <tittle>Pizzas La Serrana</tittle>
+        <link>https://www.hogarmania.com/cocina/recetas/pastas-pizzas/pizza-serrana-8674.html</link>
+        <descripcion> Web de las Edicones Paraninfo</descripcion>
+        <item>
+            <title>Libros de Informatica</title>
+            <link>https://www.paraninfo.es/libros/informatica-N1-0073</link>
+            <descripcion>Libros tecnicos de informatica</descripcion>
+            <pubDate>Tur, 01 Jan 2021 10:00:00 +0100</pubDate>
+        </item>
+    </channel>
+</rss>

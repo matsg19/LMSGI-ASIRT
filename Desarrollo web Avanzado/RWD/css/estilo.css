@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 600px;
+    height: 200px;
+    margin: 16px;
+}
+div.uno{
+    background-color: red;
+}
+div.dos{
+    background-color: blueviolet;
+}
+div.tres{
+    background-color: green;
+}
