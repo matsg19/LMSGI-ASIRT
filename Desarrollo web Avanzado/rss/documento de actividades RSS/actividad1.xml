@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+        <tittle>barcapizza</tittle>
+        <link>https://barcapizza.com/css/</link>
+        <descripcion>En Telepizza llevamos desde 1987 cocinando nuestro mayor secreto: una masa fresca hecha cada día con los mejores ingredientes, para que cada una de nuestras pizzas sea única.</descripcion>
+        <item>
+            <title>MArgarita</title>
+            <link>https://barcapizza.com/css/rsscarta-barcapizza.htm</link>
+            <descripcion>Nuestra Barbacoa más dulce con bacon tostado, jugoso pollo marinado y carne de vacuno, acompañada de nuestra adictiva salsa BBQ Sweet.</descripcion>
+        </item>
+        <item>
+            <title>Smokey BBQ</title>
+            <link>https://www.telepizza.es/rss/comida-a-domicilio/pizzas</link>
+            <descripcion>Una sorprendente combinación de doble de carne de vacuno, riquísima cebolla caramelizada y rodajas de tomate, con nuestra espectacular salsa ahumada al estilo bourbon.</descripcion>
+        </item>
+        <item>
+            <title>Barbacoa</title>
+            <link>https://www.telepizza.es/rss/comida-a-domicilio/pizzas</link>
+            <descripcion>Masa fresca, Bacon, pollo, fundido para pizza, salsa barbacoa y doble de carne de vacuno.</descripcion>
+        </item>
+    </channel>
+</rss>
