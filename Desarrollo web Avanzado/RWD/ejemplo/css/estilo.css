@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  div{
+    height: 100px;
+  }
+  .A{
+    background-color: red;
+  }
+  .B{
+    background-color: blueviolet;
+  }
+  .C{
+    background-color: brown;
+  }
+  .D{
+    background-color: gray;
+  }
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  
+  @media screen and (max-widch:800px) {
+    div.A{
+        flex: 100%;
+    }
+    div.B{
+        flex: 100%;
+    }
+    div.C{
+        flex: 40%;
+    }
+    div.D{
+        flex: 60%;
+    }
+  }
+  @media screen and (min-widch:801px) {
+    div.A{
+        flex: 50%;
+    }
+    div.B{
+        flex: 50%;
+    }
+    div.C{
+        flex: 100%;
+    }
+    div.D{
+        flex: 100%;
+    }
+  }
