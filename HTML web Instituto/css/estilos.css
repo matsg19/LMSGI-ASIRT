@@ -6,12 +6,12 @@
 
 body{
     width:100%;
-    height: 1000px;
+    height: 2000px;
 }
 /* Contenido de la cabecera */
 header{
     width:100%;
-    height:50%;    
+    height:30%;    
     background: linear-gradient(rgb(255, 255, 255) 10%, transparent 90%),  url('../media/imagenes/headerIES.jpg') no-repeat;
     background-size:cover;
 }
@@ -19,7 +19,7 @@ header div.encabezado{
     display:flex;
     flex:row nowrap;
     width:100%;
-    height:30%;
+    height:25%;
     padding:2%;
     gap:5%; 
 }
@@ -61,12 +61,11 @@ header div.encabezado div.buscar a:hover{
 /*Borde y posición del nav*/
 header nav{
     position:sticky; position:-webkit-sticky; top:10px;
-    width:80%;
-    height:15%;
+    width:90%;
+    height:10%;
     margin:auto; 
     background-color:white;
-    border-color:red;
-    border-style: solid;
+    border:1px red solid;
     border-radius:15px;
     -webkit-border-radius:15px;
     -moz-border-radius:15px;
@@ -144,148 +143,165 @@ header nav a:hover {
 header nav a i{
     float:right;
   }
-     
+ 
+/* CSS MAIN */
 main{
     display:flex;
     flex: row nowrap;
-    background-color: whitesmoke;
-    padding-left: 5%;
-    padding-right: 5%;
+    background-color:lightgrey;
+    width:100%;
+    height:100%;
 }
 main section{
-    display: flex;
-    flex: row wrap;
+    width:70%;
+    height:100%;
+}
+/* Parte con los artículos de noticias */
+main section.noticias{
+    display:flex;
+    flex-flow:row wrap;
     justify-content: space-between;
 }
+
+/* Vamos a gestionar que el artículo tenga dos div (inicial y oculto) donde el oculto se ve al pasar por encima */
 main section article{
-    width: 29%;
-    height: 250px;
-    border: 1px red solid;
-    margin: 2%;
+    width:29%;
+    height:300px;
+    border:1px red solid;
+    margin:2%;
+    color:darkred;
     border-radius: 5%;
-    background-size: cover;
     -webkit-border-radius: 5%;
     -moz-border-radius: 5%;
     -ms-border-radius: 5%;
     -o-border-radius: 5%;
 }
-main section article.inicial{
-    color: darkred;
+main section article div.inicial{
     background: linear-gradient(rgb(255, 255, 255) 30%, transparent 70%),  url('../media/imagenes/logo.png') no-repeat;
-    background-size: cover;
-    position: relative;
-    background-position: center;
-    overflow: hidden;
-}
-main section article.texthover{
-    background-color: rgb(146, 78, 80);
-    padding: 5%;
-    text-align: center;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-}
-main section article.inicial:hover{
-    opacity: 1;
-    background-color: darkred;
-}
-main section article.inicial h4{
-    padding: 3% 10%;
-    border-bottom: 1px red solid;
-}
-main section article h1{
-    padding: 5% 10%;
-    font-size: 1.5em;
-}
-
-/*Esta es la parte de las seciones de contenidos */
-section{
-    width:70%;
+    background-size:cover;
     height:100%;
+    border-radius: 5%;
+}
+main section article:hover div.oculto{
+    opacity:1;
+} 
+main section article div.oculto{
+    background-color:rgb(186, 119, 119);
+    height:100%;
+    text-align:center;
+    position: relative;
+    padding:10%;
+    top: -298px;
+    z-index: 1;
+    border-radius: 5%;
+    opacity: 0; 
+    transition: all 0.4s ease 0s;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+}
+main section article div.inicial h4{
+    padding: 3% 10%;
+    border-bottom:1px red solid;
+}
+main section article div.inicial h1{
+    padding: 5% 10%;
+    font-size:1.5em;
 }
 
-
-/*Esta es la parte del aside */
-
-aside{
+/* CSS sobre ASIDE */
+main aside{
     width:30%;
     height:100%;
-    padding: 2%;
+    padding:2%;
 }
-aside p a{
-    color: red;
-    text-decoration: none;
+
+main aside p a{
+    color:red;
+    text-decoration:none;
 }
-aside p a:hover{
-    color: gray;
+main aside p a:hover{
+    color:gray;
 }
-aside figure{
-    width: 10%;
-    margin: 5%;
+main aside section.biblioteca{
+    width:100%;
+    height:25%;
+    margin:5%;
 }
-aside figure.biblioteca{
-    width: 100%;
-    margin: 10%;
+main aside figure.biblioteca{
+    width:100%;
 }
-aside figure.logotipo{
-    width: 15%;
-    display: flex;
-    flex: row nowrap;
-    gap: 5%;
+main aside figure.logotipos{
+    width:50%;
+    margin:2%;
+    display:flex;
+    flex:row nowrap;
+    gap:1%;
 }
-aside section.encuentranos{
-    padding: 10%;
-    padding-bottom: 20%;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+
+main aside section.encuentranos{
+    width:100%;
+    height:20%;
+    margin:2%;
+    padding:5%;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
 }
-aside section.encuentranos a{
-    color: turquoise;
+main aside section.encuentranos a{
+    color:turquoise;
 }
-aside section.encuentranos a:hover{
-    color: gray;
+main aside section.encuentranos a:hover{
+    color:gray;
 }
-aside section.buscar{
-    pa
+
+main aside section.buscar{
+    width:100%;
+    height:15%;
+    padding:5%;
 }
-aside section.buscar form{
-    margin-top: 10%;
-    margin-bottom: 20%;
+
+main aside section.buscar form input{
+    margin:2%;
 }
-aside section.buscar form input{
-    margin-top: 10%;
-}
-aside section.buscar form input.sumbit{
-    border: red;
-    padding: 10px;
-    border-radius: 10%;
-    background-color: white;
-    color: red;
+main aside section.buscar form input.submit{
+    border:1px red solid;
+    padding:10px;
+    background-color:white;
+    color:red;
     font-weight: bold;
-    -webkit-border-radius: 10%;
-    -moz-border-radius: 10%;
-    -ms-border-radius: 10%;
-    -o-border-radius: 10%;
+    border-radius:10%;
+    -webkit-border-radius:10%;
+    -moz-border-radius:10%;
+    -ms-border-radius:10%;
+    -o-border-radius:10%;
 }
-aside section.buscar form input.sumbit:hover{
-    background-color: black;
-    color: white;
+main aside section.buscar form input.submit:hover{
+    background-color:black;
+    color:white;
+    border-color:black;
 }
-aside section.video{
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    padding-bottom: 10%;
-    padding-top: 10%;
-}
-aside section.video iframe{
-    width: 100%;
-    height: 10%;
-    margin-top: 10%;
-}
-/*Esta parte es el pie de pagina*/
-footer{
+main aside section.videos{
     width:100%;
     height:35%;
+    padding:5%;
+    overflow:auto;
+    border-top:1px black solid;
+    border-bottom:1px black solid;
+}
+main aside section.videos hr{
+    margin:5%;
+}
+main aside section.videos iframe{
+    width:100%;
+    height:auto;
+    margin-top:3%;
+}
+
+/* CSS sobre FOOTER*/
+footer{
+    width:100%;
+    height:20%;
     background-color:black;
     color:gray;
 }
@@ -352,12 +368,65 @@ footer div.encuentranos{
     padding:1%;
     border-left:green 2px solid;
 }
-footer div.encuentranos figure.logotipo img{
-    width: 10%;
+
+footer div.encuentranos figure.logotipos{
+    width:25;
+    height:25%;
+    margin:10%;
+    display:flex;
+    flex:row nowrap;
+    gap:1%;
 }
 
 img{
     width:100%;
     height:100%;
     object-fit: fill;
+}
+@media screen and (max-width:800px) {
+    body{
+        height: 2800px;
+    }
+    header{
+        background:  lightslategray;
+    }
+    header div.encabezado{
+        flex-direction: column;
+        height: 15%;
+    }
+    header nav{
+        display: none;
+    }
+    header div.encabezado div.buscar{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+    main section{
+        flex: 100%;
+    }
+    main aside{
+        flex: 100%;
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        height: 50%;
+    }
+    footer div.contenido{
+        flex-direction: column;
+    }
+    footer nav{
+        flex-direction: column;
+    }
+    footer div.calendario{
+        width: 100%;
+    }
+    footer div.encuentranos{
+        width: 100%;
+    }
+    footer div.enlaces{
+        width: 100%;
+    }
 }
