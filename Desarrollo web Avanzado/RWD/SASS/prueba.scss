@@ -1,0 +1,37 @@
+$color: darkorange;
+$fondo: black;
+$size: 200px;
+
+
+h1{
+    text-decoration: dotted;
+    color: $color;
+    background-color: $fondo;
+}
+p{
+    font-weight: bold;
+    color: $fondo;
+}
+a{
+    color: $fondo;
+    &:visited{
+        text-decoration: dashed;
+        color: yellow;
+    }
+    &:hover{
+        text-decoration: none;
+        color: $color;
+    }
+}
+
+@mixin square($size,$color){
+    width: $size;
+    height: 2*$size;
+    background-color: $color;
+}
+div{
+    @include square(200px,rgb(15,220,35) )
+}
+div.claseX{
+    @include square(300px,orange) 
+}
