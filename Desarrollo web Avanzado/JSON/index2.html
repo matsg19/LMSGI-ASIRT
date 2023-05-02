@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Leer contenido JSON</h2>
+    <ul id="demo">
+        <script>
+            let jsonData = JSON.parse('[{"name":"John", "age":13, "car":"Ford"},{"name":"Pilar", "age":23, "car":"Seat"}]');
+            console.table(jsonData);
+
+            //Procesar el contenido del JSON
+            document.getElementById("demo").innerHTML = jsonData.map((elemento)=> {
+                if(elemento.age>18){
+                    return "<li>" + elemento.name + ", "+elemento.age+"</li>";
+                }
+            });
+        </script>
+    </ul>
+</body>
+</html>

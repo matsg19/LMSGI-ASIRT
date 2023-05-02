@@ -13,13 +13,16 @@
     <meta name="keywords" content="sitio, web" />
     
     <link rel="index" href="./" title="Inicio" />
-    <link rel="stylesheet" media="screen,projection" type="text/css" href="./css/principal.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/principal.css" />
+
+    <script src="https://kit.fontawesome.com/db7d235ee4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
 <!-- Contenedor -->
 <div id="contenedor">
+
     <!-- Cabecera -->
     <div id="cabecera">
 
@@ -34,21 +37,24 @@
                     <input type="text" name="busqueda" size="30" />
                     <input type="submit" name="botonbuscar" value="Buscar" />
                 </fieldset>
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
             </form>
+            <span class="lupa"></span>
         </div> <!-- /buscador -->
 
 		<div class="clear"></div>
     </div> <!-- /cabecera -->
+
      <!-- Menú principal -->
      <div id="menu">
             <ul>
-                <li><a href="#">Inicio</a><i class="fa-solid fa-infinity"></i></li>
-                <li class="seleccionado"><a href="#">Blog</a></li><i class="fa-solid fa-blog"></i>
-                <li><a href="#">Sobre mi</a></li>
-                <li><a href="#">Fotos</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Enlaces</a></li>
+                <li><span class="inicio"><a href="#"> <i class="fa-solid fa-bars"></i> <p>Inicio</p></a></span></li>
+                <li class="seleccionado"><span class="blog"> <a href="#"><i class="fa-brands fa-blogger"></i> <p>Blog</p></a></span></li>
+                <li><span class="sobremi"> <a href="#"><i class="fa-regular fa-address-card"></i> <p>Sobre mi</p></a></span></li>
+                <li><span class="fotos"> <a href="#"><i class="fa-solid fa-camera-retro"></i> <p>Fotos</p></a></span></li>
+                <li><span class="portfolio"> <a href="#"><i class="fa-regular fa-folder"></i> <p>Portfolio</p></a></span></li>
+                <li><span class="contacto"> <a href="#"><i class="fa-solid fa-address-book"></i> <p>Contacto</p></a></span></li>
+                <li><span class="enlaces"> <a href="#"><i class="fa-solid fa-link"></i> <p>Enlaces</p></a></span></li>
             </ul>
 
         <div class="clear"></div>

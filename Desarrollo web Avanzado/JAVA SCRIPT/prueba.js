@@ -200,18 +200,152 @@
 // let multiplicar3 = (a,b) => a * b; // FUNCIÓN FLECHA
 // console.log(multiplicar3(5 , 23 ));  //15
 
-function getMinMaxForLoop(arr){
-    let maximum = arr[0];
-     let minimum = arr[0];
-    for (let i = 0 ; i < arr.length; i++) {
-    if (maximum < arr[i]) {
-    maximum = arr[i];
-    } else {
-    minimum = arr[i];
-    }
-    }
-   let result = ([maximum, minimum]);
-    return result;
-   };
-   console.log('getMinMaxForLoop :',getMinMaxForLoop([10,3,8,1,33]))
+// function getMinMaxForLoop(arr){
+//     let maximum = arr[0];
+//      let minimum = arr[0];
+//     for (let i = 0 ; i < arr.length; i++) {
+//     if (maximum < arr[i]) {
+//     maximum = arr[i];
+//     } else {
+//     minimum = arr[i];
+//     }
+//     }
+//    let result = ([maximum, minimum]);
+//     return result;
+//    };
+//    console.log('getMinMaxForLoop :',getMinMaxForLoop([10,3,8,1,33]))
 
+// let improeNota = (Nteoria,Npractica) => (return 0.6+Nteoria+)
+
+
+// let teoria=prompt("Introduce la nota");
+//     let practica=prompt("Introduce la nota de practicas");
+//     function imprimeNota(Nteoria,Npractia){
+//         let resultado=0.6Nteoria+0.4Npractica
+//     }
+
+//2. funcion factorial
+
+// function factorial(n){
+//     if (n<=1) return 1;
+//     else return n*factorial(n-1);
+// }
+// console.log(factorial(3));
+// console.log(factorial(5));
+
+//3. Escribe la función que suma los elementos de un array
+
+// let v=[9.45,8.34,6.23,4.342];
+// let suma=0;
+// for(leti=0;i<v.length;i++);{
+//     suma+=v[i];
+// }
+// console.log("el resultado de la suma es: "+suma);
+
+// es com el procedimiento reduce
+// let v=[9.45,8.34,6.23,4.342];
+// let suma=0;
+// function getSUM(suma, num){
+//     return suma +num;
+// }
+
+// console.log("el resultado de la suma es: "+v.reduce(getSUM));
+
+
+/* 4.  Escribe un programa que devuelva el número de veces que
+ aparece una letra en una cadena. Tu programa debería
+ recibir una cadena y la letra.
+ let programa = (cadena, letra) => {...}
+ Después, debe devolver el número de veces que la letra
+ aparece en la cadena. Dado el texto "JavaScript" y la letra
+ "a", su programa debe devolver 2. Intenta hacerlo luego
+ con substr (Recuerda que hay funciones ya creadas)*/
+
+    // let frase='hola caracola';
+    // let letra='la';
+    // let programa =(cadena,busqueda)=>{
+    //     let contador=0;
+    //     for(let i=0;i<frase.length;i++){
+    //         if(frase.substr(i,letra.length)==letra){
+    //             contador++;
+    //             i+=letra.length;
+    //         }
+    //         return contador;
+    //     }
+    // }
+    // console.log("en la frase \" "+frase+" aparese "+programa(frase,letra)+" la letra "+letra)
+/*5.  Escribe un programa para simular el comportamiento de
+una calculadora.
+Habrá un bucle do-while que irá pidiendo la operación
+(+,-,*,/) que se introducirá con un número y los operandos
+para que en un switch haga la operación.
+Si se introduce -1 en la operación el programa finaliza*/
+
+// function caracola(){
+//     let numero1,numer2,resultado;
+// }
+
+//6. Escribe un programa llamado AdivinaNumero que genera
+// un número aleatorio entre 0 y 100 y mediante un bucle dowhile vaya solicitando números al usuario hasta que
+// acierte. Si el número introducido es menor o mayor que el
+// objetivo se lo indicará en un alert. Si acierta le indicará que
+// ha acertado y el número de intentos realizado. (usa
+// Math.random y Math.floor)
+// function adivina numero(){
+//     let numero=math.floor(maath.random()*100)+1;
+
+// }
+// vector_numeros=new Array(3)
+// vector_numeros[0]=23; vector_numeros[1]=-45.23
+// vector_numeros[5]="hola"; vector_numeros[-1]=3;
+
+// console.log(vector_numeros)
+
+//  const fruits = ["Banana", "Orange"];
+//  fruits.push("Kiwi", "Lemon"); 
+//   console.log(fruits);
+//  fruits.pop();
+//  console.log(fruits);
+
+
+// let v=[1,2,3,4,5,6];
+
+// let a=[...v];
+// console.log(a);
+// a[0]=-3;
+// console.log(a);
+// console.log(v);
+
+// Actividad: Genera un array de 5 números aleatorios donde no se repita
+// ninguno. Antes de asignarlo tienes que ver si está ya con otro bucle.
+// – Actividad: A partir del siguiente enlace, implementa el algoritmo de
+// ordenación por burbuja y compara el resultado con la función sort. Array: [389,
+// 703, 247, 563, 224, 714, 464, 953, 708, 201, 887, 550, 515, 206, 131];
+
+
+
+
+
+//manipulacion de acceso a objetos
+var empleado={
+    nombre:"Pepe Perez",
+    edad:27,
+    deportes:["ajedrez","fútbol"],
+    estaJubilado:function (){
+    if (this.edad>65) {
+    return true
+    } else {
+    return false
+    }
+    }
+   }
+
+//acceso seguna a claves del objeto
+console.log(empleado.edad);
+console.log(empleado.deportes);
+console.log(empleado.estaJubilado);
+
+
+//    document.write("<br/>El nombre es:"+empleado.nombre)
+//    document.write("<br/>¿Jubilado?" + empleado.estaJubilado() )
+   

@@ -1,4 +1,4 @@
-/* ---- Estilos b�sicos ---------------------------------------------------- */
+/* ---- Estilos básicos ---------------------------------------------------- */
 
 body {
   margin: 0;
@@ -65,6 +65,7 @@ ul, ol {
   margin: 0;
   padding: 0;
   background: #233C9B url("../imagenes/cabecera.jpg") no-repeat;
+  background-size:auto;
   color: #FFF;
 }
 
@@ -132,7 +133,7 @@ ul, ol {
   border: none;
 }
 
-/* ---- Men� --------------------------------------------------------------- */
+/* ---- Menú --------------------------------------------------------------- */
 #menu {
   background: #192666;
   margin: 0 5px;
@@ -223,9 +224,8 @@ ul, ol {
   margin: 4px 5px 0 0;
 }
 
-#contenido #secundario #sobremi p {
-  background-color: #192666;
-}
+/* #contenido #secundario #sobremi p {
+} */
 
 #contenido #secundario div {
   padding: 0 10px;
@@ -269,10 +269,107 @@ ul, ol {
   left: 40px;
 }
 
-/* @media screen(max-width:700px) {
-  body{
-    padding: 0;
-    margin: 0;
-  }
-} */
+i{
+  display:none !important;
+}
 
+/* Definimos el comportamiento de la web en diferentes tamaños */
+@media (max-width: 1000px) and (min-width: 650px) {
+  #contenedor {
+    width:100%;
+  }
+  #cabecera {
+    width: 100%;
+    background: #233C9B url("../imagenes/cabecera.jpg") no-repeat;
+    background-size:cover;
+  }
+  #contenido {
+    width: 100%;
+  }
+  #menu{
+    background-color:green;
+    width:100%;
+  }
+  #menu ul li a{
+    background-color:green;
+  }
+  #menu ul li a p{
+    display:inline;
+  }
+  #menu ul li i{
+    display:inline !important;
+  }
+  #contenido #secundario {
+    display: none;
+  }
+
+  #contenido #principal{
+    width:100%;
+
+  }
+  #contenido #principal div.articulo{
+    background: url("../imagenes/fondo_articulo.jpg") no-repeat;
+    background-size: cover;
+  }
+  #contenido #principal div.articulo img{
+    width:100%;
+  }
+  
+}
+
+@media (max-width: 650px) {
+  #contenedor {
+    width:100%;
+  }
+  #cabecera {
+    width: 100%;
+    background: #233C9B ;
+  }
+  #contenido {
+    width: 100%;
+  }
+
+  
+  #menu{
+    background-color:orange;
+  }
+  #menu ul li{
+    clear:both;
+    
+  }
+  #menu ul li a{
+    background-color:orange;
+  }
+  #menu ul li a p{
+    display:none;
+  }
+
+  #menu ul li span i{
+    display:inline-block !important;
+    font-size:20px;
+  }
+
+  #cabecera #buscador form input{
+    display:none;
+  }
+  #cabecera #buscador i{
+    display:inline-block !important;
+    font-size:40px;
+  }
+  #contenido #secundario {
+    display: none;
+  }
+  
+  #contenido #principal{
+    width:100%;
+
+  }
+  #contenido #principal div.articulo{
+    background: url("../imagenes/fondo_articulo.jpg") no-repeat;
+    background-size: cover;
+  }
+  #contenido #principal div.articulo img{
+    width:100%;
+  }
+ 
+}

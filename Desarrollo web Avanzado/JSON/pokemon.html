@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pokemon.css">
+</head>
+<body>
+    <script>
+        // Caso de problema asíncrono con datos externos
+            // fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+            //     .then(data=>data.json())
+            //     .then (data=> console.log(data))
+            //     .catch(error =>  console.log(error));
+            // const pokemon = {
+            //     numero: data.id,
+            //     img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
+            //     imgJuego: data.sprites.front_default,
+            //     imgCvg: data.sprites.other.dream_world.front_default,
+            //     nombre: data.name,
+            //     experiencia: data.base_experience,
+            //     hp: data.stats[0].base_stat,
+            //     ataque: data.stats[1].base_stat,
+            //     defensa: data.stats[2].base_stat,
+            //     especial: data.stats[3].base_stat,
+            // }
+            // console.log(pokemon);
+
+        const fetchData = async (id) => {
+            //Para usar await la función tiene que usar async
+            const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+            const data = await res.json()
+            const pokemon = {
+                numero: data.id,
+                img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${data.id}.png`,
+                imgJuego: data.sprites.front_default,
+                imgCvg: data.sprites.other.dream_world.front_default,
+                nombre: data.name,
+                experiencia: data.base_experience,
+                hp: data.stats[0].base_stat,
+                ataque: data.stats[1].base_stat,
+                defensa: data.stats[2].base_stat,
+                especial: data.stats[3].base_stat,
+            }
+            console.log(pokemon);
+            
+            //Mostrar contenido
+            document.getElementById("pokemons").innerHTML += 
+            //document.write(
+                `
+                    <h3> Número: ${pokemon.numero} - ${pokemon.nombre}</h3>
+                    <img src=${pokemon.img} alt="pokemon"/>
+                    <p>HP: ${pokemon.hp} Ataque: ${pokemon.ataque} Defensa: ${pokemon.defensa}</p>
+                `
+            //)
+            ;
+        } 
+
+        const fetchData2 = async () => {
+            const res = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=9`)
+            const data = await res.json()
+            console.log(data.results);
+            let pokemon;
+            //Recorrer cada pokemon
+            document.getElementById("tabla").innerHTML +=data.results.map((x,index)=> {
+                pokemon = {
+                    numero: index+1,
+                    img: `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${index+1}.png`,
+                    nombre: x.name,
+                }
+
+                return `<tr>
+                    <td> ${pokemon.numero} </td> <td>${pokemon.nombre}</td> <td><img src=${pokemon.img} alt="pokemon"/></td>
+                    </tr>`;
+            });
+        }
+    
+    </script>
+    <section id="pokemons">
+        <h2> USANDO LA POKEAPI </h2>
+        <script>
+        fetchData(17); fetchData(150); fetchData(6);
+        </script>
+    </section>
+    <h3> TABLA</h3>
+    <table>
+        <thead>
+            <tr>
+                <th >Número</th> <th>Nombre</th><th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody id="tabla">
+            <script>fetchData2();</script>
+        </tbody>
+    </table>
+</body>
+</html>
