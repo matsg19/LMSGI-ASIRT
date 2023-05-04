@@ -5,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="module" src="index2.js"></script>
 </head>
 <body>
-    <h2>Leer contenido JSON</h2>
-    <ul id="demo">
-        <script>
-            let jsonData = JSON.parse('[{"name":"John", "age":13, "car":"Ford"},{"name":"Pilar", "age":23, "car":"Seat"}]');
-            console.table(jsonData);
+    <h1>Caso de importar el fichero directamente</h1>
+    <h2>Lista de Marvel Comics</h2>
+    <ul id="demo">   </ul>
+    <h2>Lista de DC Comics</h2>
+    <ul id="demo2">   </ul>
 
-            //Procesar el contenido del JSON
-            document.getElementById("demo").innerHTML = jsonData.map((elemento)=> {
-                if(elemento.age>18){
-                    return "<li>" + elemento.name + ", "+elemento.age+"</li>";
-                }
-            });
-        </script>
-    </ul>
+    <h1>LISTADO DE HÉROES DE MARVEL DESDE FICHERO EXTERNO LOCAL</h1>
+    <h2>Lista de Marvel Comics</h2>
+    <ul id="demo3">   </ul>
+    <h2>Lista de DC Comics</h2>
+    <ul id="demo4">   </ul>
+    
 </body>
 </html>

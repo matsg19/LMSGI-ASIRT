@@ -5,32 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="module" src="index.js"></script>
 </head>
 <body>
-    <h1>LISTADO DE HÉROES DE MARVEL</h1>
-    <h2>Lista de Marvel Comics</h2>
-    <ul id="demo">
-        <script>
-            fetch("./heroes.json")
-            .then((response) => response.json())
-            .then((jsonData) => {
-            //Procesar el fichero para mostrar por HTML
-            
-            document.getElementById("demo").innerHTML = jsonData.map((heroe)=>{    
-                    if (heroe.publisher=="Marvel Comics"){
-                        return "<li>" + heroe.superhero + ", "+heroe.publisher+"</li>";
-                    }
-            });
-            //Colocar ahora los de DC
-            document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "</ul><br/><h2>Lista de DC Comics</h2></ul>"+ jsonData.map((heroe)=>{    
-                    if (heroe.publisher=="DC Comics"){
-                        return "<li>" + heroe.superhero + " , "+heroe.publisher+"</li>";
-                    }
-            });
-            });
+    <h2>leer contenido JSON</h2>
+    <ul id="demo"></ul>
 
-            
-        </script>
-    </ul>
+    <h2>Escribir todo el JSON con FOR</h2>
+    <ul id="demo2"></ul>
+
+    <h2>Escribir  todo el JSON con MAP</h2>
+    <ul id="demo3"></ul>
 </body>
 </html>

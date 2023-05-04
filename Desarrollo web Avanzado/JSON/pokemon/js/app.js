@@ -55,4 +55,3 @@ const pintarCard = pokemon => {
     fragment.appendChild(clone)
     flex.appendChild(fragment)
 }
-
