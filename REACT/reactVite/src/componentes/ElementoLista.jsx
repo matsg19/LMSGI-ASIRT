@@ -9,12 +9,4 @@ export const ElementoLista = () => {
   )
 }
 
-export const ElementoLista2 = () => {
-    return (
-      <>
-      <li>Elemento 1</li>
-      <li>Elemento 2</li>
-      </>
-    )
-  }
   
