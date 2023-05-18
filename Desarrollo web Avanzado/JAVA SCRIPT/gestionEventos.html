@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario que hace la accion normal</h2>
+    <form action="#">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function stopAction(evt) {
+        evt.preventDefault(); //Para la ejecución
+        alert('has pulsado el boton') //Acciones
+        evt.submit(); //Continúa el submit
+        }
+    </script>
+    <h2>Formulario que hace la accion normal</h2>
+    <form onsubmit="stopAction(event)">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Cambiar el Nombre con un boton</h2>
+    <h3 id="texto">Mi nombre es: </h3>
+ <script>
+ function cambiarNombre()
+ {
+ let nombre=prompt('Introduce tu nombre');
+ document.getElementById("texto").textContent="Tu nombre es: "+nombre;
+ }
+ </script>
+ <input onclick="cambiarNombre()" type="button" value="Introduce tu Nombre"
+id="myButton1" />
+</body>
+</html>

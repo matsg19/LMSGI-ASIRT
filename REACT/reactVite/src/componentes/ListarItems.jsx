@@ -25,3 +25,11 @@ export const ListarItems= () => {
     </table>
     );
    }
+
+   export default function ExtraerINFO(props) {
+    if(props.tipo=="tabla"){
+    return <ProcesarJSONTabla/>
+    }
+    else return <ProcesarJSONLista />
+   }
+   

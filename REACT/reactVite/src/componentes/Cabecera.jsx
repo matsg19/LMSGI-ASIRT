@@ -1,4 +1,5 @@
 import React from 'react'
+import './cabecera.css'
 
 export const Cabecera = () => {
   return (
@@ -15,3 +16,11 @@ export const Cabecera2 = (props) => {
       
     )
   }
+
+export const Cabecera3 = () => {
+  return (
+    <>
+      <h1 className={color}>{mensaje}texto1</h1>
+    </>
+  );
+};

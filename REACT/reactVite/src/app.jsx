@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 // import "./App.css";
-import { Cabecera, Cabecera2 } from "./componentes/Cabecera";
+import { Cabecera, Cabecera2, Cabecera3 } from "./componentes/Cabecera";
 import { ElementoLista } from "./componentes/ElementoLista";
 import { RedesSociales } from "./componentes/RedesSociales";
 import { ListarItems } from "./componentes/ListarItems";
@@ -10,10 +10,10 @@ import { ListarItems } from "./componentes/ListarItems";
 function App() {
   const [count, setCount] = useState(0);
   let vector=[11,4,75,34];
-  let enlaces=[
-    {<imagen src:"" ,url:"" />};
-    {<imagen src:"" ,url:"" />};
-  ];
+  // let enlaces=[
+  //   {<imagen src:"" ,url:"" />};
+  //   {<imagen src:"" ,url:"" />};
+  // ];
 
   return (
     <div>
@@ -33,6 +33,9 @@ function App() {
 
       <p>Crear una lista apartir de una array</p>
       <ListarItems />
+
+      <h3>pasar estilo como parametro</h3>
+      <Cabecera3 mensaje="Como mola REACT con css Estilos" color='verde'></Cabecera3>
     </div>
   );
 }
