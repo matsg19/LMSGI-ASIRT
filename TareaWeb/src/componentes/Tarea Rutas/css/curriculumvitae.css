@@ -1,0 +1,116 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #eef9ff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+  
+  .section {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .heading {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-info {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .company-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .job-title {
+    font-size: 14px;
+    margin-bottom: 0.25rem;
+    color: #777;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .skills {
+    margin-top: 1rem;
+  }
+  
+  .skills li {
+    display: inline-block;
+    background-color: #dcebfb;
+    color: #333;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .heading {
+      font-size: 20px;
+    }
+    
+    .name {
+      font-size: 18px;
+    }
+    
+    .contact-info {
+      font-size: 14px;
+    }
+    
+    .section-title {
+      font-size: 16px;
+    }
+    
+    .company-name {
+      font-size: 14px;
+    }
+    
+    .job-title {
+      font-size: 12px;
+    }
+    
+    .description {
+      font-size: 12px;
+    }
+    
+    .skills li {
+      font-size: 12px;
+      padding: 0.25rem;
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+  }

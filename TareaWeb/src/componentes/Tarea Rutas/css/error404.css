@@ -1,0 +1,24 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .error-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .error-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  /* Media query para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .error-image {
+      max-width: 80%; /* Reducir el tamaño de la imagen en pantallas más pequeñas */
+    }
+  }

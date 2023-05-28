@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyCard({color}) {
   return (
-    
     <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="/vite.svg" />
       <Card.Body className={color}>
