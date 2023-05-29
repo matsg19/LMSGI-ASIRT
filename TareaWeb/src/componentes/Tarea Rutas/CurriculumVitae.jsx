@@ -47,9 +47,9 @@ export default function Curriculum (){
         </ul>
       </div>
 
-      <div classname="section">
-        <h3 classname="section-title">Habilidades</h3>
-        <ul classname="skills">
+      <div className="section">
+        <h3 className="section-title">Habilidades</h3>
+        <ul className="skills">
           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat incidunt eligendi expedita natus, amet quas. Culpa unde ducimus eius doloremque quasi suscipit est eos non, rem, deleniti dicta numquam quas?</li>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sunt at qui rerum maxime quia soluta, odio pariatur, dolore ipsa assumenda aspernatur quae nihil distinctio vel exercitationem commodi quidem enim.</li>
           <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et eveniet autem repellendus dolore vel, qui exercitationem illum, sequi quia soluta, magnam quasi voluptate sed quo dolorem fugiat porro eos.</li>

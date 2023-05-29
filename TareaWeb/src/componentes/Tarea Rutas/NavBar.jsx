@@ -7,7 +7,7 @@ export default function NavBar () {
       <nav>
         <ul>
           <li><NavLink to='/'><p>HOME</p></NavLink></li>
-          <li><NavLink to='Sobre Mi'><p>ABOUT</p></NavLink></li>
+          <li><NavLink to='/sobremi'><p>ABOUT</p></NavLink></li>
         </ul>
       </nav>
     )
